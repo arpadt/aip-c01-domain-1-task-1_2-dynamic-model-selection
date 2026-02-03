@@ -15,6 +15,14 @@ models = [
     'eu.amazon.nova-2-lite-v1:0',
 ]
 
+# Pricing per 1M tokens (input/output) in USD
+MODEL_PRICING = {
+    'eu.amazon.nova-micro-v1:0': {'input': 0.035, 'output': 0.14},
+    'eu.amazon.nova-lite-v1:0': {'input': 0.06, 'output': 0.24},
+    'eu.amazon.nova-pro-v1:0': {'input': 0.80, 'output': 3.20},
+    'eu.amazon.nova-2-lite-v1:0': {'input': 0.06, 'output': 0.24},
+}
+
 # Test cases with ground truth answers
 test_cases = [
     {
@@ -78,28 +86,18 @@ def invoke_model(model_id, prompt, max_tokens=500):
     """Invoke a model with the given prompt and return the response and metrics."""
     start_time = time.time()
 
-    # Prepare request body based on model provider
-    if "anthropic" in model_id:
-        body = json.dumps({
-            "anthropic_version": "bedrock-2023-05-31",
-            "max_tokens": max_tokens,
-            "messages": [
-                {"role": "user", "content": prompt}
-            ]
-        })
-    elif "amazon" in model_id:
-        body = json.dumps({
-            'schemaVersion': 'messages-v1',
-            'messages': [{
-                'role': 'user',
-                'content': [{'text': prompt}]
-            }],
-            'inferenceConfig': {
-                'maxTokens': max_tokens,
-                'temperature': 0.7,
-                'topP': 0.9
-            },
-        })
+    body = json.dumps({
+        'schemaVersion': 'messages-v1',
+        'messages': [{
+            'role': 'user',
+            'content': [{'text': prompt}]
+        }],
+        'inferenceConfig': {
+            'maxTokens': max_tokens,
+            'temperature': 0.7,
+            'topP': 0.9
+        },
+    })
     # Add more model providers as needed
 
     try:
@@ -112,20 +110,24 @@ def invoke_model(model_id, prompt, max_tokens=500):
         # Parse the response
         response_body = json.loads(response['body'].read().decode())
 
-        if "anthropic" in model_id:
-            output = response_body['content'][0]['text']
-        elif "amazon" in model_id:
-            output = response_body['output']['message']['content'][0]['text']
+        output = response_body['output']['message']['content'][0]['text']
+        input_tokens = response_body['usage']['inputTokens']
+        output_tokens = response_body['usage']['outputTokens']
+
+        # Calculate cost
+        pricing = MODEL_PRICING.get(model_id, {'input': 0, 'output': 0})
+        cost = (input_tokens / 1_000_000 * pricing['input']) + (output_tokens / 1_000_000 * pricing['output'])
 
         # Calculate metrics
         latency = time.time() - start_time
-        token_count = len(output.split())  # Rough estimate
 
         return {
             "success": True,
             "output": output,
             "latency": latency,
-            "token_count": token_count
+            "input_tokens": input_tokens,
+            "output_tokens": output_tokens,
+            "cost": cost
         }
     except Exception as e:
         return {
@@ -154,7 +156,9 @@ def evaluate_models():
                     "question": test_case["question"],
                     "output": response["output"],
                     "latency": response["latency"],
-                    "token_count": response["token_count"],
+                    "input_tokens": response["input_tokens"],
+                    "output_tokens": response["output_tokens"],
+                    "cost": response["cost"],
                     "similarity_score": similarity
                 })
             else:
@@ -194,50 +198,52 @@ def create_model_selection_strategy(results_df):
     """Create a model selection strategy based on evaluation results."""
     print("\nEvaluation Summary:")
 
-    # Calculate overall scores per domain (context)
-    use_case_models = {}
-
-    for context in results_df["context"].unique():
-        context_df = results_df[results_df["context"] == context]
-
-        model_scores = context_df.groupby("model_id").agg({
-            "latency": "mean",
-            "similarity_score": "mean"
-        }).reset_index()
-
-        # Normalize scores
-        max_latency = model_scores["latency"].max()
-        model_scores["latency_score"] = 1 - (model_scores["latency"] / max_latency)
-
-        # Calculate weighted score
-        model_scores["overall_score"] = (
-            0.7 * model_scores["similarity_score"] +
-            0.3 * model_scores["latency_score"]
-        )
-
-        # Get best model for this use case
-        best_model = model_scores.nlargest(1, "overall_score").iloc[0]["model_id"]
-        use_case_models[context.lower().replace(" ", "_")] = best_model
-
     # Calculate global scores for primary/fallback
     model_scores = results_df.groupby("model_id").agg({
         "latency": "mean",
-        "similarity_score": "mean"
+        "similarity_score": "mean",
+        "cost": "mean"
     }).reset_index()
     print(model_scores)
 
+    # Normalize latency (lower is better)
     max_latency = model_scores["latency"].max()
-    model_scores["latency_score"] = 1 - (model_scores["latency"] / max_latency)
-    model_scores["overall_score"] = (
-        0.7 * model_scores["similarity_score"] +
-        0.3 * model_scores["latency_score"]
-    )
+    min_latency = model_scores["latency"].min()
+    model_scores["latency_score"] = (max_latency - model_scores["latency"]) / (max_latency - min_latency)
+
+    # Normalize similarity (higher is better)
+    max_similarity = model_scores["similarity_score"].max()
+    min_similarity = model_scores["similarity_score"].min()
+    model_scores["similarity_score_normalized"] = (model_scores["similarity_score"] - min_similarity) / (max_similarity - min_similarity)
+
+    # Normalize cost (lower is better)
+    max_cost = model_scores["cost"].max()
+    min_cost = model_scores["cost"].min()
+    model_scores["cost_score"] = (max_cost - model_scores["cost"]) / (max_cost - min_cost)
+
+    # Calculate weighted scores
+    model_scores["performance_score"] = 0.8 * model_scores["latency_score"] + 0.2 * model_scores["similarity_score_normalized"]
+    model_scores["accuracy_score"] = 0.2 * model_scores["latency_score"] + 0.8 * model_scores["similarity_score_normalized"]
+    model_scores["overall_score"] = 0.5 * model_scores["latency_score"] + 0.5 * model_scores["similarity_score_normalized"]
+    model_scores["cost_score_weighted"] = 0.7 * model_scores["cost_score"] + 0.3 * model_scores["similarity_score_normalized"]
+
     model_scores = model_scores.sort_values("overall_score", ascending=False)
 
+    # Get best models for each optimization mode
+    best_performance = model_scores.nlargest(1, "performance_score").iloc[0]["model_id"]
+    best_accuracy = model_scores.nlargest(1, "accuracy_score").iloc[0]["model_id"]
+    best_balanced = model_scores.nlargest(1, "overall_score").iloc[0]["model_id"]
+    best_cost = model_scores.nlargest(1, "cost_score_weighted").iloc[0]["model_id"]
+
     strategy = {
-        "primary_model": model_scores.iloc[0]["model_id"],
+        "primary_model": best_balanced,
         "fallback_models": model_scores.iloc[1:]["model_id"].tolist(),
-        "use_case_models": use_case_models,
+        "use_case_models": {
+            "performance_optimized": best_performance,
+            "accuracy_optimized": best_accuracy,
+            "balanced": best_balanced,
+            "cost_optimized": best_cost
+        },
         "model_scores": model_scores.to_dict(orient="records")
     }
 
