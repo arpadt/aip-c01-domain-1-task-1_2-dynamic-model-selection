@@ -260,5 +260,5 @@ if __name__ == "__main__":
     print(json.dumps(strategy, indent=2))
 
     # Save strategy to file for AppConfig
-    with open("model_selection_strategy.json", "w") as f:
+    with open("config/model_selection_strategy.json", "w") as f:
         json.dump(strategy, f, indent=2)
