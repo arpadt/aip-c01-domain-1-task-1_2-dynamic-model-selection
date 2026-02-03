@@ -1,0 +1,1449 @@
+model_id,context,question,output,latency,input_tokens,output_tokens,cost,similarity_score
+eu.amazon.nova-micro-v1:0,Financial services,What is a 401(k) retirement plan?,"A 401(k) retirement plan is a financial tool offered by many employers in the United States to help employees save for retirement. It is named after a section of the U.S. Internal Revenue Code (IRS Code) that defines the rules for these types of employer-sponsored retirement plans.
+
+### Key Features of a 401(k) Plan:
+
+1. **Employer Contribution:**
+   - Many employers offer matching contributions, where they will match a portion of the employee’s contributions up to a certain percentage. For example, an employer might match 50% of the employee’s contributions up to 6% of the employee's salary.
+
+2. **Tax Advantages:**
+   - **Traditional 401(k):** Contributions are typically made with pre-tax dollars, which means they are deducted from your paycheck before taxes are calculated. This can reduce your taxable income for the year. The money grows tax-deferred, meaning you won't pay taxes on the investment gains or dividends until you withdraw the money in retirement.
+   - **Roth 401(k):** Contributions are made with after-tax dollars, so they do not reduce your taxable income for the year they are made. However, withdrawals during retirement are tax-free, provided certain conditions are met.
+
+3. **Contribution Limits:**
+   - For 2023, the annual contribution limit for a 401(k) plan is $22,500 for individuals under age 50. Individuals aged 50 and over can make an additional catch-up contribution of $7,500.
+   - These limits are subject to change annually based on inflation.
+
+4. **Investment Options:**
+   - Employees typically have a range of investment options within the 401(k) plan, such as mutual funds, bonds, stock funds, and sometimes even company stock. The exact selection of funds can vary depending on the plan.
+
+5. **Vesting:**
+   - Vesting refers to the process by which an employee gains full ownership of their employer’s contributions, including any matching contributions or company matches. Vesting schedules can vary, but generally, full vesting occurs after a certain period of employment, such as five years.
+
+6. **Withdrawals:**
+   - Withdrawals from a traditional 401(k) are taxed as ordinary income,",2.9940648078918457,19,500,7.0665e-05,0.6919922896236942
+eu.amazon.nova-lite-v1:0,Financial services,What is a 401(k) retirement plan?,"A 401(k) retirement plan is a type of employer-sponsored, defined-contribution retirement savings plan that is offered in the United States. It is named after a section of the U.S. Internal Revenue Code that governs such plans. The 401(k) plan allows employees to save and invest a piece of their paycheck before taxes are deducted, meaning that their taxable income for the year is reduced. This pre-tax contribution is called a ""deferred compensation"" because the income tax on the contribution and its investment earnings is deferred until withdrawal.
+
+Key Features of a 401(k) Retirement Plan:
+
+1. **Employer Contributions**: Some employers match a portion of an employee's contribution up to a certain percentage of their salary. This matching contribution is essentially free money for the employee and is a significant incentive for participation.
+
+2. **Employee Contributions**: Employees can contribute a portion of their salary to their 401(k) plan, up to annual limits set by the IRS. For 2023, the contribution limit is $22,500, with an additional $7,500 catch-up contribution allowed for individuals aged 50 and over.
+
+3. **Investment Options**: 401(k) plans typically offer a range of investment options, such as mutual funds, stocks, bonds, and exchange-traded funds (ETFs). The investment choices depend on the plan provider and can vary widely.
+
+4. **Tax Advantages**: Contributions to a traditional 401(k) are made with pre-tax dollars, reducing the employee's taxable income in the contribution year. Investment earnings grow tax-deferred until withdrawal. Upon retirement, withdrawals are taxed as ordinary income. There is also a Roth 401(k) option, where contributions are made with after-tax dollars, and qualified withdrawals in retirement are tax-free.
+
+5. **Loans and Withdrawals**: Many 401(k) plans allow participants to borrow against their account balance, typically up to 50% of the vested balance or $50,000, whichever is less. Early withdrawals before age 59½ may be subject to taxes and penalties, although there are certain exceptions (e.g., hardship withdrawals, IRS Rule 72(t) substantially equal periodic payments).
+
+6. **Automatic Enrollment and Escalation**: Many employers have adopted automatic",2.199693202972412,19,500,0.00012114000000000001,0.7271017836826104
+eu.amazon.nova-pro-v1:0,Financial services,What is a 401(k) retirement plan?,"A 401(k) retirement plan is a tax-advantaged, defined-contribution retirement savings plan offered by many employers in the United States. Here’s a detailed overview of its key features and how it works:
+
+### Key Features of a 401(k) Plan
+
+1. **Employer-Sponsored**: 
+   - A 401(k) plan is set up and maintained by an employer. Employees can choose to participate in the plan if their employer offers it.
+
+2. **Employee Contributions**: 
+   - Employees can contribute a portion of their pre-tax salary to the 401(k) plan. These contributions reduce the employee’s taxable income for the year.
+   - Contributions are typically made through payroll deductions.
+
+3. **Employer Matching**: 
+   - Many employers offer a matching contribution, where they will match a percentage of the employee’s contributions up to a certain limit. For example, an employer might match 50% of employee contributions up to 6% of their salary.
+
+4. **Vesting**: 
+   - Employer contributions often come with a vesting schedule. This means that the employee earns the right to the employer’s contributions over time. Full vesting usually occurs after a specified number of years of service.
+
+5. **Investment Options**: 
+   - 401(k) plans typically offer a range of investment options, such as mutual funds, stocks, bonds, and target-date funds. Employees can choose how to allocate their contributions among these options.
+
+6. **Tax Advantages**: 
+   - Contributions to a traditional 401(k) are made with pre-tax dollars, meaning they reduce your taxable income for the year they are made.
+   - The investments within the 401(k) grow tax-deferred, meaning you don’t pay taxes on investment gains until you withdraw the money.
+   - Withdrawals in retirement are taxed as ordinary income.
+
+7. **Roth 401(k) Option**: 
+   - Some plans offer a Roth 401(k) option, where contributions are made with after-tax dollars. Qualified withdrawals in retirement, including earnings, are tax-free.
+
+8. **Contribution Limits**: 
+   - For 2023, the contribution limit for employees is $22,500 per year. Individuals aged 50 and older can make additional",2.960789203643799,19,500,0.0016152,0.7289356666729248
+eu.amazon.nova-2-lite-v1:0,Financial services,What is a 401(k) retirement plan?,"### **What is a 401(k) Retirement Plan?**
+
+A **401(k) plan** is a tax-advantaged, employer-sponsored retirement savings account available in the United States. It is named after the section of the Internal Revenue Code (IRC) that governs its rules — **Section 401(k)**.
+
+---
+
+## **Key Features of a 401(k) Plan**
+
+### 1. **Employer-Sponsored**
+- Typically offered by employers (companies) as part of their employee benefits package.
+- Not available to self-employed individuals unless they set up a similar plan (e.g., Solo 401(k)).
+
+### 2. **Tax Advantages**
+There are **two main types** of 401(k) contributions, each with different tax treatments:
+
+#### a) **Traditional 401(k)**
+- **Contributions are made pre-tax** (they reduce your taxable income in the year you contribute).
+- **Taxes are paid on withdrawals** during retirement.
+- This can help reduce your current tax bracket if you expect to be in a lower tax bracket in retirement.
+
+#### b) **Roth 401(k)**
+- **Contributions are made post-tax** (no tax deduction in the year contributed).
+- **Withdrawals in retirement are tax-free**, provided the account is open for at least 5 years and the owner is 59½ or older.
+- Useful if you expect to be in a higher tax bracket in retirement.
+
+> **Note:** Many employers allow a mix of both Traditional and Roth contributions, letting employees diversify their tax exposure in retirement.
+
+---
+
+### 3. **Contribution Limits (2024 figures)**
+- **Employee contribution limit**: $23,000 per year.
+- **Catch-up contributions** (for those aged 50 and over): An additional $7,500, making a total of **$30,500**.
+- **Total contribution limit (employee + employer)**: $66,000 (or $73,500 with catch-up), subject to income limits for Roth contributions.
+
+---
+
+### 4. **Employer Matching**
+- Many employers offer **matching contributions**, often in the form of:
+  - **50% match up to 6% of salary**, or
+  - **100% match up to 3% of salary**.
+- This is essentially **free money** and one of the biggest benefits of a 401(k).
+
+---
+
+### 5. **Investment Options**
+- Employers typically offer a menu of **mutual funds, target-date funds",3.202822208404541,62,500,0.00012372000000000001,0.7406413029207876
+eu.amazon.nova-micro-v1:0,Financial services,What is an IRA account?,"An Individual Retirement Account (IRA) is a type of personal savings plan that offers significant tax advantages for retirement planning. Here’s a detailed overview:
+
+### Types of IRAs
+
+1. **Traditional IRA**:
+   - **Tax Benefits**: Contributions may be tax-deductible depending on your income and whether you or your spouse are covered by a retirement plan at work. Earnings grow tax-deferred.
+   - **Withdrawals**: Distributions are taxed as ordinary income. There are penalties for withdrawals before age 59½, with some exceptions.
+   - **Required Minimum Distributions (RMDs)**: You must start taking RMDs starting at age 73 (as of the 2023 tax year).
+
+2. **Roth IRA**:
+   - **Tax Benefits**: Contributions are made with after-tax dollars, meaning you pay taxes on the money going into the account. However, withdrawals in retirement are tax-free.
+   - **Withdrawals**: Qualified distributions are tax-free. Non-qualified distributions of earnings may be taxed and penalized if taken before age 59½ or before the account has been open for five years.
+   - **Required Minimum Distributions (RMDs)**: Roth IRAs are not subject to RMDs during the owner’s lifetime.
+
+3. **SEP IRA (Simplified Employee Pension IRA)**:
+   - Primarily for self-employed individuals and small business owners.
+   - Allows the employer to make contributions to the IRAs of eligible employees.
+
+4. **SIMPLE IRA (Savings Plan for Employees who Receive Independent Money)**:
+   - Designed for small businesses with 100 or fewer employees.
+   - Contributions can be made by both the employer and the employee.
+
+### Key Features
+
+- **Contribution Limits**: For 2023, the maximum contribution limit for all IRAs (traditional, Roth, SEP, and SIMPLE) is $6,500, or $7,500 if you’re age 50 or older and eligible to make catch-up contributions.
+- **Investment Options**: IRAs can hold a wide variety of investments, including stocks, bonds, mutual funds, ETFs, and more.
+- **Account Maintenance**: You can maintain an IRA through various financial institutions such as banks, brokerage firms, and credit unions.
+- **Tax Treatment**: The tax treatment of traditional and Roth IRAs differs significantly, and individuals often use",1.892167091369629,12,500,7.042000000000001e-05,0.5429875402137959
+eu.amazon.nova-lite-v1:0,Financial services,What is an IRA account?,"An Individual Retirement Account (IRA) is a financial services product designed to help individuals save for retirement with certain tax advantages. Essentially, an IRA is a type of personal savings plan that offers tax benefits, and the investment earnings grow tax-deferred until withdrawal.
+
+Here are the key features and types of IRAs:
+
+### Types of IRAs:
+1. **Traditional IRA**:
+   - **Tax-Deferred Growth**: Contributions may be tax-deductible, and the earnings grow without being taxed until withdrawal.
+   - **Required Minimum Distributions (RMDs)**: You must start taking distributions at age 73 (as of 2023).
+   - **Contribution Limits**: The annual contribution limit for 2023 is $6,500 ($7,500 if you're age 50 or older).
+
+2. **Roth IRA**:
+   - **Tax-Free Growth**: Contributions are made with after-tax dollars, and qualified withdrawals in retirement are tax-free.
+   - **No RMDs**: You are not required to take distributions at any age.
+   - **Contribution Limits**: Same as Traditional IRA ($6,500 for 2023, $7,500 if age 50 or older).
+   - **Income Limits**: There are income limits for contributing to a Roth IRA. For 2023, the phase-out range is $138,000 to $153,000 for single filers and $218,000 to $228,000 for married couples filing jointly.
+
+### Key Features:
+- **Investment Options**: Both Traditional and Roth IRAs can hold a variety of investments, including stocks, bonds, mutual funds, ETFs, and more.
+- **Portability**: You can generally roll over an IRA from one financial institution to another without it being considered a distribution.
+- **Tax Benefits**: The primary tax advantage of an IRA is that it allows your investment earnings to grow tax-deferred (Traditional IRA) or tax-free (Roth IRA).
+
+### Eligibility and Contributions:
+- **Who Can Open an IRA**: Generally, anyone with earned income can open an IRA. There are certain conditions and limits based on income and other factors, especially for Roth IRAs.
+- **Contribution Deadline**: Contributions for a tax year can be made up until the tax filing deadline (usually April",2.4983339309692383,12,500,0.00012072000000000001,0.5843300706335568
+eu.amazon.nova-pro-v1:0,Financial services,What is an IRA account?,"An Individual Retirement Account (IRA) is a long-term savings account designed specifically to help individuals save for retirement. There are several types of IRAs, each with its own set of rules, benefits, and tax implications. Here’s a detailed overview of the most common types of IRAs:
+
+### Traditional IRA
+- **Contributions**: Contributions may be tax-deductible, depending on your income and whether you or your spouse are covered by a retirement plan at work.
+- **Tax Treatment**: Earnings grow tax-deferred, meaning you don’t pay taxes on the earnings until you withdraw them in retirement.
+- **Withdrawals**: Withdrawals are taxed as ordinary income. If you withdraw funds before age 59½, you may incur a 10% early withdrawal penalty, in addition to income tax.
+- **Required Minimum Distributions (RMDs)**: You must start taking RMDs by April 1 following the year you turn 73 (as of 2023; previously it was 72).
+
+### Roth IRA
+- **Contributions**: Contributions are made with after-tax dollars, meaning they are not tax-deductible.
+- **Tax Treatment**: Earnings grow tax-free. Qualified withdrawals in retirement are also tax-free.
+- **Withdrawals**: You can withdraw your contributions (but not earnings) at any time without taxes or penalties. Qualified withdrawals of earnings are tax-free if certain conditions are met (age 59½ and the account has been open for at least five years).
+- **RMDs**: Unlike Traditional IRAs, Roth IRAs do not have RMDs during the account owner’s lifetime.
+
+### SEP IRA (Simplified Employee Pension)
+- **Eligibility**: Designed for self-employed individuals and small business owners.
+- **Contributions**: Employers can contribute up to 25% of an employee’s compensation (up to a maximum annual amount set by the IRS).
+- **Tax Treatment**: Contributions are tax-deductible, and earnings grow tax-deferred.
+- **Withdrawals**: Same tax treatment as Traditional IRAs regarding withdrawals and penalties.
+
+### SIMPLE IRA (Savings Incentive Match Plan for Employees)
+- **Eligibility**: Small businesses with 100 or fewer employees who received at least $5,000 in compensation from the business in the previous year.
+- **Contributions**: Employees can contribute via salary deferral, and employers must",2.821769952774048,12,500,0.0016096,0.44310451548609797
+eu.amazon.nova-2-lite-v1:0,Financial services,What is an IRA account?,"### **What is an IRA Account?**
+
+An **IRA (Individual Retirement Account)** is a type of investment account designed specifically to help individuals **save and invest for retirement**. It offers tax advantages that can help your money grow more efficiently over time. IRAs are available to anyone with earned income, and they allow you to choose how and where to invest your money (e.g., stocks, bonds, mutual funds, etc.).
+
+---
+
+## **Key Features of an IRA**
+
+### 1. **Types of IRAs**
+There are several types of IRAs, each with different tax treatment and eligibility rules:
+
+#### **a. Traditional IRA**
+- **Tax Treatment:** Contributions **may be tax-deductible** in the year they are made (depending on your income and whether you or your spouse are covered by a workplace retirement plan).
+- **Tax at Withdrawal:** Investments grow **tax-deferred** — you don’t pay taxes on earnings until you withdraw the money in retirement.
+- **Required Minimum Distributions (RMDs):** You must begin taking **required minimum distributions** at age **73** (as of 2024; this may change due to legislative updates).
+- **Eligibility:** Anyone with earned income can contribute, regardless of other retirement plans.
+
+#### **b. Roth IRA**
+- **Tax Treatment:** Contributions are made with **after-tax dollars** — you pay taxes on the money going in.
+- **Tax at Withdrawal:** Qualified withdrawals (after age 59½ and the account has been open for at least 5 years) are **tax-free**.
+- **RMDs:** **No RMDs** during the account holder’s lifetime.
+- **Income Limits:** There are **income limits** that restrict eligibility to contribute directly to a Roth IRA. High-income earners may use a **Backdoor Roth IRA** strategy.
+
+#### **c. SEP IRA (Simplified Employee Pension)**
+- Designed for **self-employed individuals** or small business owners.
+- Allows **higher contribution limits** than regular IRAs.
+- Contributions are made by the employer (or self-employed individual), and they are **tax-deductible**.
+- Follows Traditional IRA withdrawal rules.
+
+#### **d. SIMPLE IRA (Savings Incentive Match Plan for Employees)**
+- Designed for small businesses with 100 or fewer employees.
+- Employees can make pre-tax contributions, and employers must match or make nonelective contributions.
+- Has higher annual contribution limits than a Traditional or Roth IRA.
+
+---
+
+## **Contribution Limits",3.2559638023376465,58,500,0.00012348,0.7258001588074633
+eu.amazon.nova-micro-v1:0,Financial services,What type of loan is a mortgage?,"A mortgage is a specific type of loan that is categorized under the realm of real estate financing. It is primarily used to purchase or improve real property, such as residential homes, commercial buildings, or land. The property itself serves as collateral for the loan, which means that if the borrower fails to repay the loan, the lender has the right to seize and sell the property to recover the outstanding debt.
+
+Here are some key characteristics and aspects of a mortgage:
+
+### 1. **Purpose:**
+   - Mortgages are typically used to finance the purchase of real estate. They can also be used for refinancing existing mortgages, consolidating debt, or making improvements to property.
+
+### 2. **Types:**
+   - **Fixed-Rate Mortgage:** The interest rate remains the same for the entire term of the loan, providing stability in monthly payments.
+   - **Adjustable-Rate Mortgage (ARM):** The interest rate can change over time based on market conditions, potentially leading to fluctuations in monthly payments.
+   - **Conventional Mortgage:** This is a non-government backed mortgage typically offered by private lenders.
+   - **FHA Mortgage:** A mortgage insured by the Federal Housing Administration (FHA), which allows for lower down payments and is aimed at low- to moderate-income borrowers.
+   - **VA Mortgage:** A mortgage available to veterans, service members, and their families, insured by the Department of Veterans Affairs (VA).
+   - **USDA Mortgage:** A mortgage insured by the United States Department of Agriculture (USDA), designed to help people in rural areas buy homes.
+
+### 3. **Loan Term:**
+   - The most common term lengths for mortgages are 15, 20, and 30 years. The longer the term, the lower the monthly payment, but the more total interest paid over the life of the loan.
+
+### 4. **Down Payment:**
+   - A down payment is an initial payment made at the time of purchasing the property, typically a percentage of the total home price. The size of the down payment can affect the mortgage terms and interest rates.
+
+### 5. **Amortization:**
+   - Mortgages are typically amortized, meaning that the loan is paid off in equal installments over the term of the loan. Each installment includes both principal and interest.
+
+### 6. **Interest Rate:**
+   - The interest rate determines the cost of borrowing the money. It can be fixed or adjustable",1.736581802368164,14,500,7.049000000000001e-05,0.7656198534535538
+eu.amazon.nova-lite-v1:0,Financial services,What type of loan is a mortgage?,"A mortgage is a type of loan specifically designed for the purpose of purchasing real estate, such as residential homes, commercial properties, or land. It is a long-term financial agreement between a borrower and a lender, typically a bank or mortgage institution. In this arrangement, the lender provides a substantial sum of money to the borrower, which is then used to acquire the property. The borrower agrees to repay the loan over an extended period, often spanning several decades, with regular payments that include both the principal amount borrowed and the interest charged by the lender.
+
+Mortgages are distinguished by their collateral nature, meaning the property being purchased serves as collateral for the loan. If the borrower fails to repay the loan according to the agreed terms, the lender has the right to foreclose on the property, taking ownership and potentially selling it to recover the outstanding debt.
+
+There are several types of mortgages, each with distinct features:
+
+1. **Fixed-Rate Mortgages (FRMs):** In a fixed-rate mortgage, the interest rate remains constant for the entire term of the loan. This predictability allows borrowers to budget their payments more easily, as they know exactly how much they will be paying each month.
+
+2. **Adjustable-Rate Mortgages (ARMs):** An adjustable-rate mortgage has an interest rate that can change periodically based on a specific index. These loans often start with a lower initial interest rate compared to fixed-rate mortgages, which can be attractive to borrowers. However, the interest rate (and thus the monthly payments) can fluctuate over time, introducing an element of uncertainty.
+
+3. **Conventional Loans:** These are mortgages that are not guaranteed or insured by the federal government. Borrowers with good credit and a substantial down payment often qualify for conventional loans. They can be either fixed-rate or adjustable-rate.
+
+4. **Government-Backed Loans:** These include mortgages insured by government entities, such as Federal Housing Administration (FHA) loans, Veterans Affairs (VA) loans, and United States Department of Agriculture (USDA) loans. These loans often come with more lenient eligibility criteria and can be particularly beneficial for first-time homebuyers, low- to moderate-income borrowers, and military veterans.
+
+5. **Jumbo Mortgages:** These are loans that exceed the conforming loan limits set by government-sponsored enterprises (GSEs) like Fannie Mae and Freddie Mac. Due to their size, jumbo mortgages may come with higher interest rates and stricter qualification",2.059169054031372,14,500,0.00012084,0.7226482386363714
+eu.amazon.nova-pro-v1:0,Financial services,What type of loan is a mortgage?,"A mortgage is a specific type of loan used to purchase or maintain a home, land, or other types of real estate. The borrower agrees to pay the lender over time, typically in a series of regular payments that are divided into principal and interest. The property then serves as collateral to secure the loan.
+
+### Key Characteristics of a Mortgage
+
+1. **Secured Loan**: A mortgage is a secured loan, meaning that it is backed by collateral—in this case, the property being purchased. If the borrower fails to make payments, the lender has the right to take possession of the property through a process called foreclosure.
+
+2. **Amortization**: Most mortgages are amortizing loans, which means that the loan balance is paid down over time through regular payments. Each payment consists of both principal (the original loan amount) and interest (the cost of borrowing the money).
+
+3. **Terms**: Mortgages typically have long terms, commonly 15, 20, or 30 years, although shorter and longer terms are also available. The term of the mortgage affects the monthly payment amount and the total interest paid over the life of the loan.
+
+4. **Interest Rates**: Mortgages can have fixed interest rates, which remain the same for the entire term of the loan, or variable (adjustable) interest rates, which can change periodically based on market conditions.
+
+5. **Types of Mortgages**:
+   - **Fixed-Rate Mortgage**: The interest rate remains the same for the entire term of the loan.
+   - **Adjustable-Rate Mortgage (ARM)**: The interest rate can change periodically, usually in relation to a benchmark interest rate.
+   - **FHA Loan**: Insured by the Federal Housing Administration, these loans are designed to help low- to moderate-income borrowers.
+   - **VA Loan**: Guaranteed by the Department of Veterans Affairs, these loans are available to veterans and active military personnel.
+   - **Jumbo Loan**: These are loans that exceed the conforming loan limits set by Fannie Mae and Freddie Mac.
+
+6. **Down Payment**: Borrowers are usually required to make a down payment, which is a percentage of the home’s purchase price. The size of the down payment can affect the loan terms and interest rate.
+
+7. **Closing Costs**: In addition to the down payment, borrowers are typically responsible for closing costs, which can include fees for appraisal, title search, and other services related to the loan.
+
+8.",2.7740259170532227,14,500,0.0016112000000000001,0.6990064455475475
+eu.amazon.nova-2-lite-v1:0,Financial services,What type of loan is a mortgage?,"### **What Type of Loan is a Mortgage?**
+
+A **mortgage** is a type of **secured loan** that is specifically used to **purchase or maintain real estate**, such as a house, condo, or land. Here’s a detailed breakdown of what this means within the context of **financial services**:
+
+---
+
+## **1. Secured Loan**
+- **Secured by Collateral**: A mortgage is backed by the property being purchased. The property itself serves as **collateral** for the loan.
+- **Lender’s Protection**: If the borrower fails to repay the loan, the lender has the legal right to **foreclose** on the property—taking ownership to recover the outstanding debt.
+
+---
+
+## **2. Long-Term Loan**
+- **Repayment Period**: Mortgages are typically **long-term loans**, with repayment periods ranging from **15 to 30+ years** (sometimes even 40 years in some countries).
+- **Amortized Payments**: Payments are usually structured as **fixed monthly installments** that include both **principal** and **interest**, and often property taxes and insurance.
+
+---
+
+## **3. Real Estate Financing**
+- **Purpose**: The primary purpose of a mortgage is to **finance the purchase of real estate** or to **refinance** an existing loan on a property.
+- **Down Payment**: Borrowers typically must pay a **down payment** (a percentage of the property’s price), with the mortgage covering the remaining balance.
+
+---
+
+## **4. Types of Mortgages**
+In financial services, several types of mortgages are commonly offered:
+
+### **A. Fixed-Rate Mortgage**
+- **Interest Rate**: Stays the same for the entire loan term.
+- **Predictability**: Monthly payments remain constant, making budgeting easier.
+
+### **B. Adjustable-Rate Mortgage (ARM)**
+- **Interest Rate**: Changes periodically based on a benchmark interest rate (e.g., LIBOR, SOFR) plus a lender margin.
+- **Initial Rate Period**: Often starts with a fixed rate for a set period (e.g., 5, 7, or 10 years), then adjusts.
+
+### **C. Interest-Only Mortgage**
+- **Payment Structure**: Borrower pays only the **interest** portion for a set period (e.g., first 5–10 years), then begins paying both principal and interest—often resulting in much higher payments later.
+
+### **D. FHA / VA / USDA Loans (U.S. Examples)**
+",2.891278028488159,60,500,0.0001236,0.7424019475250055
+eu.amazon.nova-micro-v1:0,Financial services,What is a credit score?,"A credit score is a numerical representation of a person's creditworthiness, often ranging from 300 to 850 in the United States, although the exact scale can vary by country. It is a critical component in the financial services industry and plays a significant role in determining an individual's ability to borrow money and the terms associated with it.
+
+### How Credit Scores Are Calculated
+
+Credit scores are typically generated using sophisticated algorithms that analyze various elements of an individual's credit history. Here are the main factors that contribute to the calculation of a credit score:
+
+1. **Payment History (35%)**: This factor examines whether you have consistently paid your bills on time. Late payments, defaults, and bankruptcies significantly impact your score. Creditors report payment histories to credit bureaus, which are then used in the scoring formula.
+
+2. **Credit Utilization Ratio (30%)**: This is the amount of credit you are currently using compared to your total available credit (credit limit). Keeping this ratio low—ideally below 30%—is generally advised to boost your credit score.
+
+3. **Length of Credit History (15%)**: A longer credit history provides more data for creditors to assess your reliability as a borrower. The average age of your accounts and the age of your oldest account contribute to this factor.
+
+4. **Types of Credit in Use (10%)**: Utilizing a mix of credit types, such as credit cards, mortgages, auto loans, and retail accounts, can positively affect your score. Creditors like to see that you can manage different types of credit responsibly.
+
+5. **New Credit/Inquiries (10%)**: This includes recent credit applications and the number of new accounts opened. Too many recent credit inquiries can negatively affect your score, as it may suggest financial distress or risk.
+
+### Importance of Credit Scores
+
+**Loan Approval**: Credit scores are pivotal in loan approval processes. Lenders use them to evaluate the risk associated with lending money to an individual. A higher credit score typically means lower interest rates and better loan terms.
+
+**Interest Rates**: Borrowers with higher credit scores generally qualify for lower interest rates on loans and credit cards. This can lead to significant savings over the life of a loan.
+
+**Rental Applications**: Landlords often check credit scores to assess potential tenants' reliability in paying rent on time.
+
+**Insurance Premiums**: Some insurance companies use credit scores to determine premiums. Responsible credit behavior can lead to lower",1.7971911430358887,12,500,7.042000000000001e-05,0.6855866990374327
+eu.amazon.nova-lite-v1:0,Financial services,What is a credit score?,"A credit score is a numerical representation of an individual's creditworthiness, which is a measure of how likely they are to repay borrowed money. This score is derived from a detailed analysis of a person's credit history, which is compiled and maintained by credit bureaus. The score is typically based on several key factors:
+
+1. **Payment History (35%)**: This is the most significant factor in a credit score and reflects whether the individual has a history of making timely payments on loans and credit cards.
+
+2. **Amounts Owed (30%)**: This considers the total amount of debt the individual has relative to their credit limits or loan amounts. It also includes the number of credit accounts with balances.
+
+3. **Length of Credit History (15%)**: This looks at the age of the individual’s credit accounts, including the average age of accounts and the age of the oldest and newest accounts. Longer credit histories can positively impact the score.
+
+4. **New Credit (10%)**: This factor assesses the number of new credit accounts and recent inquiries. Opening multiple new accounts in a short period can negatively impact the score.
+
+5. **Credit Mix (10%)**: This evaluates the variety of credit accounts the individual holds, such as credit cards, mortgages, auto loans, etc. A diverse mix of credit types can positively influence the score.
+
+Credit scores are typically in the range of 300 to 850, with higher scores indicating a lower risk of default. Scores are used by lenders to make informed decisions about whether to extend credit and at what interest rates. Common credit scoring models include the FICO score, VantageScore, and others, each with slight variations in how they weigh and calculate the factors mentioned above.
+
+Understanding and maintaining a good credit score is crucial in the financial services industry as it affects an individual's ability to secure loans, credit cards, mortgages, and even rental agreements or insurance premiums.",1.7339088916778564,12,395,9.552000000000001e-05,0.6589177502046685
+eu.amazon.nova-pro-v1:0,Financial services,What is a credit score?,"Certainly! A credit score is a numerical representation of an individual's creditworthiness, which is used by lenders, creditors, and financial institutions to assess the risk of lending money or providing credit to that person. Here’s a detailed breakdown:
+
+### Components of a Credit Score
+Credit scores are typically calculated based on several key factors, which can vary slightly depending on the scoring model used (e.g., FICO score, VantageScore). The main components usually include:
+
+1. **Payment History (35%)**: 
+   - This is the record of whether you’ve paid past credit accounts on time. Late payments, missed payments, or other defaults on your credit accounts will lower your score.
+
+2. **Amounts Owed (30%)**: 
+   - This reflects how much debt you currently have. It includes the total amount you owe, the amount you owe on different types of credit (e.g., credit cards vs. installment loans), and the percentage of your credit limits that you are using (credit utilization ratio).
+
+3. **Length of Credit History (15%)**: 
+   - This looks at how long your credit accounts have been established, including the age of your oldest account, the age of your newest account, and the average age of all your accounts.
+
+4. **New Credit (10%)**: 
+   - This factor considers how many new credit accounts you have opened recently, the number of recent credit inquiries, and how much new debt you have.
+
+5. **Credit Mix (10%)**: 
+   - This examines the types of credit accounts you have, such as credit cards, retail accounts, installment loans, finance company accounts, and mortgage loans.
+
+### Range and Interpretation
+Credit scores typically range from 300 to 850 in the United States. Here’s a general interpretation of different score ranges:
+
+- **800-850**: Exceptional
+- **740-799**: Very Good
+- **670-739**: Good
+- **580-669**: Fair
+- **300-579**: Poor
+
+### Importance
+A higher credit score indicates lower risk to lenders, which can result in more favorable terms on loans and credit cards, such as lower interest rates and higher credit limits. Conversely, a lower credit score may lead to higher interest rates, less favorable loan terms, or even denial of credit.
+
+",2.927086114883423,12,500,0.0016096,0.6378648353774007
+eu.amazon.nova-2-lite-v1:0,Financial services,What is a credit score?,"### **What is a Credit Score?**
+
+A **credit score** is a numerical representation of an individual's creditworthiness — that is, how likely they are to repay borrowed money on time. It is a key factor that lenders (such as banks, credit card companies, and other financial institutions) use to assess the risk of extending credit (like loans or credit cards) to a person.
+
+---
+
+### **Key Details About Credit Scores**
+
+#### **1. What Does a Credit Score Measure?**
+A credit score reflects the information in your **credit report**, which includes:
+- Payment history (whether you've paid past debts on time)
+- Amounts owed (how much of your available credit you're using)
+- Length of credit history
+- New credit inquiries (recent applications for loans or credit cards)
+- Types of credit used (e.g., credit cards, mortgages, auto loans)
+
+---
+
+#### **2. Common Credit Scoring Models**
+
+The two most widely used credit scoring models in the United States are:
+
+- **FICO Score** – Developed by the Fair Isaac Corporation (FICO), this is the most commonly used score by lenders. It ranges from **300 to 850**, with higher scores indicating lower risk.
+- **VantageScore** – Developed by the three major credit bureaus (Equifax, Experian, and TransUnion), it also ranges from **300 to 850** and uses a slightly different weighting system than FICO.
+
+Other scoring models exist for specific purposes, such as:
+- **FICO 9, FICO 8, FICO 5** (used for different types of loans)
+- **Industry-specific scores** (e.g., auto lenders or mortgage lenders may use specialized scores)
+
+---
+
+#### **3. What Do the Numbers Mean?**
+
+| **FICO Score Range** | **Credit Classification** | **Lender's View** |
+|----------------------|---------------------------|-------------------|
+| **800 – 850**        | Exceptional               | Very low risk; often get best rates |
+| **740 – 799**        | Very Good                 | Low risk; qualify for most loans with good terms |
+| **670 – 739**        | Good                      | Considered reliable; average rates |
+| **580 – 669**        | Fair                      | Higher risk; may face higher interest rates |
+| **300 – 579**        | Poor                      | High risk; may be denied credit or get very high rates |
+
+---
+
+#### **4",3.2850611209869385,58,500,0.00012348,0.7646508144075872
+eu.amazon.nova-micro-v1:0,Financial services,What is an APR?,"Annual Percentage Rate (APR) is a crucial concept in financial services that represents the yearly cost of borrowing money or the annual return on investment. Here's a detailed explanation of what APR entails:
+
+### Definition:
+The Annual Percentage Rate (APR) is a standardized measure of the annual interest rate charged for loans or earned by investment products. It gives consumers a clearer picture of the true cost of borrowing by incorporating not just the basic interest rate but also additional fees and costs associated with the financial product.
+
+### Key Components:
+1. **Interest Rate:** This is the percentage of the principal amount that is charged as interest over a year. For example, if you have a loan with a 5% interest rate and the APR is 7%, the interest rate alone does not account for additional costs.
+
+2. **Fees and Additional Costs:** Unlike the Annual Percentage Yield (APY), which calculates compounding interest, APR includes all additional fees and charges that are part of the borrowing or lending process. These can include origination fees, discount points, and other charges.
+
+### Calculation:
+To determine the APR, financial institutions use a formula that considers the interest rate and additional costs. Here's a simplified version of how it might look:
+
+\[ \text{APR} = \text{Interest Rate} + \text{Fees and Costs} \]
+
+### Importance:
+1. **Transparency:** The APR provides a clear, standardized way of comparing different financial products, such as credit cards, mortgages, personal loans, and auto loans. This transparency helps consumers make informed decisions by seeing the full cost of borrowing.
+
+2. **Regulatory Requirement:** Many countries have regulations that require financial institutions to disclose the APR on all credit products, ensuring that consumers are fully informed about what they are actually paying.
+
+3. **Consumer Protection:** By standardizing the way interest rates are reported, APR acts as a consumer protection measure against misleading lending practices.
+
+### Example:
+Consider two credit cards:
+- **Credit Card A** has an interest rate of 18% and an annual fee of $35.
+- **Credit Card B** has an interest rate of 17.5% with no annual fee.
+
+If Credit Card A charges $35 in fees over the course of a year, the APR would be calculated as:
+
+\[ \text{APR for Credit Card A} = 18\% + \left( \frac{\$35}{ \text{average",2.0547609329223633,11,500,7.038500000000001e-05,0.8970595661261747
+eu.amazon.nova-lite-v1:0,Financial services,What is an APR?,"An Annual Percentage Rate (APR) is a critical concept in financial services, representing the yearly interest rate charged on loans, credit cards, or other financial products. Unlike simple interest rates that might be quoted monthly or daily, the APR provides a standardized measure that allows consumers to compare the cost of borrowing across different financial products more effectively.
+
+### Key Features of APR:
+
+1. **Standardized Measurement**: The APR incorporates not only the interest rate but also any additional fees or charges associated with the loan. This provides a more comprehensive picture of the total cost of borrowing.
+
+2. **Comparison Tool**: By standardizing the interest rate, APR enables consumers to compare different financial products on a level playing field. For instance, if you're considering two credit cards, one with a lower interest rate but higher fees and the other with a slightly higher interest rate but lower fees, the APR can help you determine which card is actually more cost-effective.
+
+3. **Regulatory Compliance**: Many countries have regulations requiring lenders to disclose the APR to consumers. This transparency helps protect consumers from hidden fees and ensures they have all the information needed to make informed financial decisions.
+
+4. **Components of APR**:
+   - **Interest Rate**: The primary cost of borrowing.
+   - **Fees**: Any additional charges such as origination fees, late payment fees, or annual fees.
+   - **Compounding Frequency**: The frequency at which interest is applied to the outstanding balance. For example, interest might be compounded monthly, quarterly, or annually.
+
+### Calculation of APR:
+
+The APR can be calculated using different methods depending on the type of financial product. Here are two common methods:
+
+1. **Simple APR**:
+   - Used primarily for loans where interest is not compounded.
+   - Formula: \( \text{APR} = \left( \frac{\text{Total Interest Paid}}{\text{Principal} \times \text{Term in Years}} \right) \times 100 \)
+
+2. **Effective APR**:
+   - Used for loans where interest is compounded more frequently than annually.
+   - Formula: \( \text{APR} = \left( 1 + \frac{i}{n} \right)^{n} - 1 \)
+     - \( i \) is the nominal interest rate
+     - \( n \) is the number of compounding periods per year
+
+### Examples of APR Use:
+
+- **Credit Cards**: Credit card companies are required to",2.1225368976593018,11,500,0.00012066,0.8723576038439264
+eu.amazon.nova-pro-v1:0,Financial services,What is an APR?,"In the context of financial services, APR stands for Annual Percentage Rate. It is a critical concept for consumers to understand because it provides a standardized measure to compare the cost of borrowing money across different lenders and loan products. Here’s a detailed breakdown of what APR entails:
+
+### Definition
+The Annual Percentage Rate (APR) represents the yearly cost of borrowing money, expressed as a percentage of the principal loan amount. It includes not only the interest rate but also any additional fees and charges associated with the loan.
+
+### Components of APR
+1. **Interest Rate**: The primary cost of borrowing, expressed as a percentage of the loan amount.
+2. **Fees and Charges**: These can include origination fees, closing costs, discount points, and other charges that the lender imposes. These are annualized and added to the interest rate to arrive at the APR.
+
+### Types of APR
+1. **Fixed APR**: Remains constant throughout the term of the loan.
+2. **Variable APR**: Can fluctuate based on changes in the underlying benchmark interest rate, such as the Prime Rate or LIBOR.
+
+### Importance of APR
+1. **Comparison Tool**: Allows borrowers to compare the true cost of different loan products, even if they have different terms or fee structures.
+2. **Transparency**: Mandated by regulatory bodies (like the Consumer Financial Protection Bureau in the U.S.) to ensure that consumers have a clear understanding of the total cost of borrowing.
+3. **Budgeting**: Helps borrowers to plan their finances by providing a clear picture of their annual borrowing costs.
+
+### How to Calculate APR
+While the exact method can vary, a simplified formula for APR is:
+\[ \text{APR} = \left( \frac{\text{Total Interest and Fees}}{\text{Principal Loan Amount}} \right) \times \frac{365}{\text{Number of Days in Loan Term}} \times 100 \]
+
+### Example
+Suppose you take out a $10,000 loan with an interest rate of 5% and an origination fee of $500. The total cost over one year would be $500 (interest) + $500 (fee), giving you $1,000. The APR would be:
+\[ \text{APR} = \left( \frac{1000}{10000} \right) \times 100 = 10\%",2.897381067276001,11,500,0.0016088,0.9180229332559969
+eu.amazon.nova-2-lite-v1:0,Financial services,What is an APR?,"### **What is an APR? (Annual Percentage Rate)**
+
+In the context of **financial services**, the **APR** — which stands for **Annual Percentage Rate** — is a **broad measure of the cost of borrowing money**. It includes not just the interest rate on a loan or credit product, but also most of the **fees and additional costs** associated with the loan, expressed as a **yearly interest rate**.
+
+---
+
+### **Key Points About APR**
+
+#### 1. **Purpose of APR**
+- The APR is designed to **allow consumers to compare different financial products** (like loans, credit cards, and mortgages) on a **standardized basis**.
+- It gives a **more complete picture** of the total cost of borrowing than the interest rate alone because it includes:
+  - The **nominal interest rate**
+  - Certain **fees** (e.g., origination fees, closing costs, some service charges)
+  - Other **costs** that are directly tied to the loan
+
+#### 2. **How APR Differs from the Interest Rate**
+| **Aspect**            | **Interest Rate**                            | **APR**                                      |
+|-----------------------|----------------------------------------------|----------------------------------------------|
+| **Definition**        | The base rate at which interest is charged   | Total cost of borrowing, expressed annually  |
+| **Includes Fees?**    | Usually **no**                               | **Yes**, many associated fees                |
+| **Purpose**           | Shows how much interest you'll pay           | Shows the **true cost** of the loan          |
+| **Used For**          | Calculating monthly payments                 | Comparing loan offers                        |
+
+#### 3. **Examples of APR in Different Financial Products**
+
+##### **Credit Cards**
+- The **APR** on a credit card reflects the **cost of carrying a balance**.
+- Credit cards may have **multiple APRs**, such as:
+  - **Purchase APR** – for regular purchases
+  - **Balance Transfer APR** – for money moved from another card
+  - **Cash Advance APR** – usually higher
+  - **Penalty APR** – high rate applied after missed payments
+
+> 💡 *Example*: A credit card might advertise a **0% introductory APR for 12 months** on purchases. After that, the APR could jump to **18.99%**, which is the rate you'd pay on any remaining balance.
+
+##### **Mortgages**
+- The **APR** for a",3.1580748558044434,57,500,0.00012342,0.8933179335212859
+eu.amazon.nova-micro-v1:0,Financial services,What is a Roth IRA?,"A Roth Individual Retirement Account (IRA) is a type of retirement savings account in the United States that offers tax-free growth and tax-free withdrawals in retirement, provided certain conditions are met. Here’s a detailed overview:
+
+### Key Features of a Roth IRA
+
+1. **Taxation**:
+   - **Contributions**: Contributions to a Roth IRA are made with after-tax dollars. This means that you pay taxes on the money going into the account, but not on the money coming out when you retire.
+   - **Earnings**: Unlike traditional IRAs, earnings in a Roth IRA grow tax-free.
+
+2. **Withdrawals**:
+   - **Qualified Distributions**: If you meet the five-year rule and you are at least 59½ years old, you can withdraw your contributions (the original money you put in) at any time without taxes or penalties. Qualified distributions (which include both contributions and earnings) are also tax-free.
+   - **Non-Qualified Distributions**: Withdrawals of earnings before meeting the age and five-year requirements can be taxed and may incur a 10% penalty, except in certain situations like first-time home purchases, education expenses, or medical reasons.
+
+3. **Contribution Limits**:
+   - For 2023, the annual contribution limit for a Roth IRA is $6,500. Individuals aged 50 and older can contribute an additional $1,000 as a catch-up contribution.
+   - The contribution limit applies to all Roth and traditional IRAs combined.
+
+4. **Income Limits**:
+   - Roth IRAs have income limits that determine eligibility to contribute. For 2023:
+     - If your Modified Adjusted Gross Income (MAGI) is less than $138,000 for single filers and $218,000 for married filing jointly, you can contribute the full amount.
+     - If your MAGI is between $138,000 and $153,000 for single filers and $218,000 and $228,000 for married filing jointly, you can contribute a reduced amount.
+     - If your MAGI exceeds $153,000 for single filers and $228,000 for married filing jointly, you are not eligible to contribute to a Roth",1.6915299892425537,12,500,7.042000000000001e-05,0.710936188952964
+eu.amazon.nova-lite-v1:0,Financial services,What is a Roth IRA?,"A Roth IRA is a type of individual retirement account (IRA) available in the United States that offers significant tax benefits. Named after Senator William Roth, who was instrumental in its creation, a Roth IRA allows individuals to contribute after-tax dollars to their retirement savings. Unlike a traditional IRA, contributions to a Roth IRA are not tax-deductible in the year they are made, but withdrawals in retirement are tax-free, provided certain conditions are met.
+
+Key Features of a Roth IRA:
+
+1. **Tax Treatment**: Contributions to a Roth IRA are made with after-tax dollars, meaning you've already paid taxes on the money you contribute. Qualified withdrawals in retirement are tax-free. This is particularly advantageous if you expect to be in a higher tax bracket during retirement than you are currently.
+
+2. **Contribution Limits**: The IRS sets annual contribution limits for Roth IRAs. For 2023, the contribution limit is $6,500 for individuals under 50, and $7,500 for those aged 50 and older (due to catch-up contributions). These limits are subject to change annually.
+
+3. **Income Limits**: One significant restriction is that there are income limits for contributing to a Roth IRA. For 2023, single filers with a modified adjusted gross income (MAGI) below $138,000 can contribute the full amount, while those with a MAGI between $138,000 and $153,000 can contribute a reduced amount. For married couples filing jointly, the income phase-out range is between $218,000 and $228,000. If your income exceeds these limits, you may not be eligible to contribute directly to a Roth IRA.
+
+4. **Investment Options**: Roth IRAs offer a wide range of investment options, including stocks, bonds, mutual funds, ETFs, and more. Investors can choose investments that align with their risk tolerance and retirement goals.
+
+5. **Withdrawal Rules**: To qualify for tax-free and penalty-free withdrawals of earnings, a Roth IRA must be held for at least five years, and the account holder must be at least 59½ years old, become disabled, or meet other specific conditions. Withdrawals of contributions (not earnings) can be made at any time without tax or penalty. 
+
+6. **Required Minimum Distributions (",2.122629165649414,12,500,0.00012072000000000001,0.7397237376842773
+eu.amazon.nova-pro-v1:0,Financial services,What is a Roth IRA?,"A Roth IRA is a type of individual retirement account (IRA) that offers a unique set of tax advantages designed to help individuals save for retirement. Here’s a detailed explanation of what a Roth IRA is and how it works:
+
+### Key Features of a Roth IRA
+
+1. **Contributions Are Made with After-Tax Dollars**:
+   - Unlike traditional IRAs, where contributions are often tax-deductible, contributions to a Roth IRA are made with money that has already been taxed. This means you won’t get an immediate tax break for contributing.
+
+2. **Tax-Free Withdrawals in Retirement**:
+   - One of the most significant benefits of a Roth IRA is that qualified withdrawals in retirement are tax-free. This includes both the earnings on your contributions and the contributions themselves.
+
+3. **No Required Minimum Distributions (RMDs)**:
+   - Unlike traditional IRAs, Roth IRAs do not require you to start taking distributions at age 73 (as of 2023, the age was raised from 72). This allows your money to continue growing tax-free for as long as you live.
+
+4. **Flexible Withdrawal Rules**:
+   - You can withdraw your contributions (but not earnings) at any time without taxes or penalties. However, withdrawing earnings before age 59½ and before the account has been open for five years may incur taxes and a 10% penalty.
+
+5. **Income Limits**:
+   - There are income limits that determine your eligibility to contribute to a Roth IRA. For 2023, the contribution limits phase out for single filers with modified adjusted gross incomes (MAGI) between $138,000 and $153,000, and for married couples filing jointly with MAGI between $218,000 and $228,000.
+
+6. **Contribution Limits**:
+   - For 2023, the annual contribution limit for a Roth IRA is $6,500, with an additional $1,000 catch-up contribution allowed for individuals aged 50 and older, bringing the total to $7,500.
+
+### How It Works
+
+1. **Open a Roth IRA**:
+   - You can open a Roth IRA at most banks, credit unions, and other financial institutions.
+
+2. **Fund the Account**:
+   - Contribute",2.604797840118408,12,500,0.0016096,0.7997114952637727
+eu.amazon.nova-2-lite-v1:0,Financial services,What is a Roth IRA?,"### **What is a Roth IRA?**
+
+A **Roth Individual Retirement Account (Roth IRA)** is a type of retirement savings account available in the United States that allows individuals to contribute after-tax dollars and withdraw qualified distributions **tax-free** in retirement. It is named after Senator **William Roth**, who sponsored the legislation that created it.
+
+---
+
+## **Key Features of a Roth IRA**
+
+### 1. **Tax Treatment**
+- **Contributions are made with after-tax dollars** — you don’t get a tax deduction for the contributions.
+- **Qualified withdrawals (both earnings and contributions) are tax-free** in retirement.
+
+> **Qualified distributions** generally occur when:
+> - You are **age 59½ or older**, **and**
+> - The account has been open for **at least 5 years**.
+
+### 2. **Contribution Limits (as of 2024)**
+- **Annual contribution limit**: $6,500 per year.
+- **If you’re 50 or older**: You can make an additional **""catch-up"" contribution** of $1,000, bringing the total to **$7,500 per year**.
+
+> **Note**: These limits are **subject to change** based on inflation and IRS adjustments.
+
+### 3. **Income Eligibility**
+Not everyone can contribute directly to a Roth IRA. Your ability to contribute **phases out** based on your **modified adjusted gross income (MAGI)** and **filing status**:
+
+| Filing Status | Single / Head of Household | Married Filing Jointly | Married Filing Separately |
+|---------------|-----------------------------|-------------------------|----------------------------|
+| **2024 Phase-out range** | $146,000 – $161,000 | $230,000 – $240,000 | $0 – $10,000 |
+
+- If your MAGI is **above** the upper limit, you **cannot** contribute directly.
+- If you're above the income limit, you may consider a **""Backdoor Roth IRA""** strategy (converting a Traditional IRA to a Roth IRA).
+
+### 4. **Withdrawal Rules**
+- **Contributions (your original dollars)**: Can be withdrawn **at any time, tax- and penalty-free**.
+- **Earnings**: Can be withdrawn **tax- and penalty-free** if the account is at least **5 years old** and you are **59½ or older**, **disabled**, **using them for a first-time home purchase (up to $10,000)**",3.4577441215515137,58,500,0.00012348,0.6590577875427812
+eu.amazon.nova-micro-v1:0,Financial services,What is compound interest?,"Compound interest is a fundamental concept in the realm of financial services, particularly in the areas of savings, loans, and investments. It refers to the interest calculated on the initial principal, which also includes all of the accumulated interest from previous periods. This means that as time goes on, the amount of interest you earn grows exponentially rather than linearly, because you are now earning interest on the interest as well.
+
+Here's a more detailed breakdown:
+
+### How Compound Interest Works
+
+1. **Principal**: The original amount of money that is either invested or borrowed.
+
+2. **Interest Rate**: The percentage rate at which interest is applied to the principal. This rate can be annual, semi-annual, quarterly, monthly, or even daily.
+
+3. **Compounding Period**: The frequency at which interest is added to the account. This could be annually, semi-annually, quarterly, monthly, or daily. The more frequent the compounding periods, the more interest you will earn.
+
+4. **Accumulation**: Over time, the interest earned in previous periods starts to earn its own interest in subsequent periods.
+
+### Formulas
+
+The formula for compound interest is:
+\[ A = P \left(1 + \frac{r}{n}\right)^{nt} \]
+
+Where:
+- \( A \) is the amount of money accumulated after n years, including interest.
+- \( P \) is the principal amount (the initial amount of money).
+- \( r \) is the annual interest rate (decimal).
+- \( n \) is the number of times that interest is compounded per year.
+- \( t \) is the time the money is invested or borrowed for, in years.
+
+For example, if you invest $1,000 at an annual interest rate of 5% compounded annually for 10 years:
+\[ A = 1000 \left(1 + \frac{0.05}{1}\right)^{1 \times 10} = 1000 \left(1.05\right)^{10} \approx 1628.89 \]
+
+### Types of Compounding
+
+- **Annual Compounding**: Interest is compounded once per year.
+- **Semi-Annual Compounding**: Interest is compounded twice per year.
+- **Quarterly Compounding**: Interest is compounded four times per year.
+- **Monthly Compounding**: Interest is compounded twelve times per year.
+- **",1.781517744064331,11,500,7.038500000000001e-05,0.874951099384655
+eu.amazon.nova-lite-v1:0,Financial services,What is compound interest?,"Compound interest is a financial concept that refers to the interest on a loan or deposit, calculated based on both the initial principal and the accumulated interest from previous periods. In other words, it is the interest on interest, which results in the total amount owed or earned growing at an increasing rate over time.
+
+The formula for compound interest is:
+
+\[ A = P \left(1 + \frac{r}{n}\right)^{nt} \]
+
+where:
+- \( A \) is the amount of money accumulated after n years, including interest.
+- \( P \) is the principal amount (the initial amount of money).
+- \( r \) is the annual interest rate (decimal).
+- \( n \) is the number of times that interest is compounded per year.
+- \( t \) is the time the money is invested or borrowed for, in years.
+
+### Key Features of Compound Interest:
+
+1. **Compounding Frequency**: The more frequently interest is compounded (e.g., annually, semi-annually, quarterly, monthly, daily), the greater the amount of interest accrued. This is because interest is being calculated on a larger amount each time, including previously earned interest.
+
+2. **Time Value of Money**: Compound interest reflects the principle that money available today is worth more than the same amount in the future due to its potential earning capacity. This core principle of finance highlights the benefits of investing or saving early.
+
+3. **Applications**:
+   - **Savings Accounts**: Most savings accounts and certificates of deposit (CDs) use compound interest to increase the account balance over time.
+   - **Loans**: Compound interest can also be applied to loans, meaning borrowers will pay interest on both the principal and the accrued interest, which can lead to a higher total repayment amount.
+
+4. **Example**: Suppose you deposit $1,000 in a savings account with an annual interest rate of 5%, compounded annually. After one year, you would earn $50 in interest, making your total $1,050. In the second year, the interest is calculated on $1,050, not just the initial $1,000. This process continues, leading to exponential growth over time.
+
+### Comparison with Simple Interest
+
+Simple interest is calculated only on the principal amount and does not account for previously earned interest. The formula for simple interest is:
+
+\[ I = P \cdot r \cdot t \",1.8545610904693604,11,500,0.00012066,0.8693658498158903
+eu.amazon.nova-pro-v1:0,Financial services,What is compound interest?,"Compound interest is a fundamental concept in financial services that refers to the interest calculated on the initial principal, which also includes all of the accumulated interest from previous periods. Unlike simple interest, which is calculated only on the principal amount, compound interest grows at an accelerating rate because it is applied to an ever-increasing balance.
+
+### Key Components of Compound Interest
+
+1. **Principal (P)**: The initial amount of money that is either invested or borrowed.
+2. **Interest Rate (r)**: The rate at which interest is applied, usually expressed as an annual percentage.
+3. **Time (t)**: The duration for which the money is invested or borrowed.
+4. **Compounding Frequency (n)**: How often the interest is applied to the principal over a specific period. Common compounding frequencies include annually, semi-annually, quarterly, monthly, or daily.
+
+### Formula
+
+The formula to calculate compound interest is:
+
+\[ A = P \left(1 + \frac{r}{n}\right)^{nt} \]
+
+Where:
+- \( A \) is the amount of money accumulated after n years, including interest.
+- \( P \) is the principal amount (the initial sum of money).
+- \( r \) is the annual interest rate (decimal).
+- \( n \) is the number of times that interest is compounded per year.
+- \( t \) is the time the money is invested or borrowed for, in years.
+
+### Example
+
+Let's say you invest $1,000 at an annual interest rate of 5%, compounded monthly, for 3 years.
+
+- \( P = 1000 \)
+- \( r = 0.05 \)
+- \( n = 12 \) (monthly compounding)
+- \( t = 3 \)
+
+Using the formula:
+
+\[ A = 1000 \left(1 + \frac{0.05}{12}\right)^{12 \times 3} \]
+\[ A = 1000 \left(1 + 0.0041667\right)^{36} \]
+\[ A = 1000 \left(1.0041667\right)^{36} \]
+\[ A \approx 1161.79 \]
+
+So, after 3 years, your investment would grow to approximately",2.22331166267395,11,500,0.0016088,0.8833937825189819
+eu.amazon.nova-2-lite-v1:0,Financial services,What is compound interest?,"### **Compound Interest: Definition and Explanation**
+
+**Compound interest** is the interest calculated on the initial principal **and also on the accumulated interest** of a deposit or loan over a period of time. In simpler terms, it's **""interest on interest""** — meaning that each time interest is added to the principal, the next interest calculation is based on a larger amount.
+
+---
+
+### **How Compound Interest Works**
+
+1. **Initial Principal (P):** The starting amount of money.
+2. **Interest Rate (r):** The annual interest rate (expressed as a decimal).
+3. **Time Period (t):** The length of time the money is invested or borrowed.
+4. **Compounding Frequency (n):** How often interest is added to the principal (e.g., annually, semi-annually, quarterly, monthly, daily).
+
+---
+
+### **Formula for Compound Interest**
+
+The formula to calculate the **total amount (A)** after compound interest is applied is:
+
+$$
+A = P \left(1 + \frac{r}{n}\right)^{nt}
+$$
+
+Where:
+- $ A $ = the future value of the investment/loan, including interest
+- $ P $ = the principal investment amount (initial deposit or loan amount)
+- $ r $ = annual interest rate (decimal)
+- $ n $ = number of times interest is compounded per year
+- $ t $ = number of years the money is invested or borrowed for
+
+---
+
+### **Example**
+
+Let’s say you invest **$1,000** at an **annual interest rate of 5%**, compounded **annually** for **3 years**.
+
+- $ P = 1000 $
+- $ r = 0.05 $
+- $ n = 1 $ (annual compounding)
+- $ t = 3 $
+
+$$
+A = 1000 \left(1 + \frac{0.05}{1}\right)^{1 \times 3}
+= 1000 \times (1.05)^3
+= 1000 \times 1.157625
+= \$1,157.63
+$$
+
+So after 3 years, your investment grows to **$1,157.63**.
+
+---
+
+### **Compounding Frequency Impact**
+
+The more frequently interest is compounded, the more interest you earn (or pay, in the case of loans). Here’s how different compounding frequencies affect the result:
+
+| Compounding Frequency | Formula for $ n $ | Example Result (Same inputs) |
+|--------",2.6867048740386963,57,500,0.00012342,0.8497083044580747
+eu.amazon.nova-micro-v1:0,Financial services,What is diversification in investing?,"Diversification in investing refers to a strategy that involves spreading investments across various financial assets, such as stocks, bonds, real estate, and commodities, as well as different sectors, geographies, and types of investments. The primary objective of diversification is to reduce the overall risk of a portfolio by minimizing the impact of poor performance in any single asset or sector on the total investment value.
+
+In the context of financial services, diversification plays a crucial role in managing risk and achieving a balanced and resilient investment portfolio. Here’s how it works and why it’s important:
+
+### Key Concepts of Diversification:
+
+1. **Risk Reduction**: By spreading investments across different types of assets and sectors, investors can reduce the impact of volatility in any single investment. If one asset class performs poorly, the gains from other diversified investments can offset the losses.
+
+2. **Return Optimization**: While diversification primarily focuses on risk management, it also aims to optimize returns by investing in a mix of assets that have different risk-return profiles. This can help in achieving a balance between risk and return that suits the investor’s goals and risk tolerance.
+
+3. **Correlation**: Different asset classes often have varying correlations with each other. For example, stocks and bonds generally have low correlations, meaning when stocks decline, bonds may rise, thereby stabilizing the overall portfolio. Understanding and leveraging these correlations is a key aspect of effective diversification.
+
+4. **Market Cycles**: Different asset classes tend to perform differently during various phases of the economic cycle. Diversification helps in capitalizing on the strengths of different asset classes during different phases of the market cycle.
+
+5. **Geographical Spread**: Investing in different geographic regions can reduce the impact of regional economic downturns or political instability. Global diversification can provide exposure to growing emerging markets while protecting against domestic economic fluctuations.
+
+6. **Sector and Industry Variation**: By investing in various sectors (such as technology, healthcare, finance, consumer goods, etc.), investors can ensure that the portfolio is not overly reliant on the performance of a single sector.
+
+### Practical Application in Financial Services:
+
+1. **Investment Funds and ETFs**: Many financial service providers offer mutual funds and exchange-traded funds (ETFs) that are inherently diversified. These funds invest in a basket of securities, providing instant diversification.
+
+2. **Portfolio Management Services**: Financial advisors and wealth management services often use diversification as a cornerstone of their portfolio management strategies. They tailor diversified portfolios to meet the specific risk tolerance and investment goals of their clients.
+
+3. **Risk Assessment Tools**:",1.9894261360168457,12,500,7.042000000000001e-05,0.8483796203301393
+eu.amazon.nova-lite-v1:0,Financial services,What is diversification in investing?,"Diversification in investing is a risk management strategy that involves spreading investments across various financial instruments, sectors, industries, and asset classes to reduce the impact of any single investment's poor performance on the overall portfolio. By diversifying, investors aim to achieve a more stable and potentially higher return on their investments while minimizing risk.
+
+The underlying principle of diversification is that different asset classes and investments have varying levels of risk and return, and their performance can be influenced by different factors. For instance, stocks may perform well during economic expansions, while bonds might provide stability during market downturns. By combining these different asset classes, investors can potentially achieve a more balanced and resilient investment portfolio.
+
+Here are some key points about diversification in investing:
+
+1. Asset allocation: This involves dividing investments among different asset classes, such as stocks, bonds, real estate, and cash. Each asset class has its own risk and return profile, and the right mix depends on an investor's goals, risk tolerance, and investment horizon.
+2. Sector diversification: Investing in various sectors, such as technology, healthcare, finance, and consumer goods, can help mitigate the risk associated with a specific industry's poor performance.
+3. Geographical diversification: Investing in different geographical regions, such as domestic or international markets, can help reduce the risk associated with economic or political issues in a single country.
+4. Investment diversification: This involves investing in various types of assets within an asset class, such as investing in different stocks or bonds from various industries or companies of different sizes.
+5. Correlation: A diversified portfolio should ideally consist of assets with low or negative correlations, meaning that their performance is not strongly linked. This way, when one asset's performance declines, the others may remain stable or even increase, offsetting the losses.
+
+Diversification does not guarantee against losses, but it is a crucial strategy to help investors manage risk and achieve more consistent returns over time. It is essential to regularly review and rebalance the investment portfolio to ensure it remains aligned with the investor's goals, risk tolerance, and market conditions.",1.876830816268921,12,414,0.00010008,0.8749396673389497
+eu.amazon.nova-pro-v1:0,Financial services,What is diversification in investing?,"Diversification in investing is a risk management strategy that involves spreading investments across various financial instruments, industries, and other categories to reduce exposure to any single asset or risk. The core idea is that by not putting all your eggs in one basket, you can potentially achieve a more consistent return and lower the risk of significant losses. Here’s a deeper dive into the concept within the context of financial services:
+
+### Key Principles of Diversification
+
+1. **Asset Classes**:
+   - **Stocks**: Equities from different sectors (technology, healthcare, finance, etc.)
+   - **Bonds**: Government, municipal, and corporate bonds
+   - **Cash Equivalents**: Money market funds, certificates of deposit (CDs)
+   - **Real Estate**: REITs, direct property investments
+   - **Commodities**: Gold, oil, agricultural products
+   - **Alternative Investments**: Hedge funds, private equity, venture capital
+
+2. **Geographic Diversification**:
+   - Investing in domestic as well as international markets to mitigate country-specific risks.
+
+3. **Sector Diversification**:
+   - Allocating investments across different industries (technology, healthcare, consumer goods, etc.) to avoid sector-specific downturns.
+
+4. **Market Capitalization**:
+   - Including a mix of large-cap, mid-cap, and small-cap stocks.
+
+### Benefits of Diversification
+
+1. **Risk Reduction**:
+   - Lowers unsystematic risk, which is the risk associated with individual assets.
+
+2. **Stable Returns**:
+   - Different assets often perform differently under the same economic conditions, smoothing out returns over time.
+
+3. **Potential for Higher Risk-Adjusted Returns**:
+   - By balancing high-risk, high-reward assets with more stable, lower-risk investments, investors can potentially achieve a better risk-return tradeoff.
+
+### Methods of Diversification
+
+1. **Mutual Funds and ETFs**:
+   - These investment vehicles inherently offer diversification by pooling money from many investors to buy a wide range of assets.
+
+2. **Robo-Advisors**:
+   - Automated platforms that build and manage a diversified portfolio based on an investor’s risk tolerance and goals.
+
+3. **Individual Securities**:
+   - Manually selecting a varied mix of stocks, bonds, and other assets.
+
+### Challenges
+
+1. **Over-Diversification**:
+   - Having too many assets can lead to diminished returns and higher management costs without a corresponding increase in risk reduction.
+
+",2.8467817306518555,12,500,0.0016096,0.8615425489582542
+eu.amazon.nova-2-lite-v1:0,Financial services,What is diversification in investing?,"### **Diversification in Investing**
+
+**Diversification** is a core principle in investing that involves spreading your investments across a variety of assets, sectors, geographic regions, and investment vehicles to reduce the risk of any single investment significantly impacting your overall portfolio. The goal is **not to eliminate risk entirely**, but to **minimize unsystematic (or idiosyncratic) risk** — the risk that is specific to a particular company, industry, or asset.
+
+---
+
+### **Key Concepts of Diversification**
+
+#### 1. **Unsystematic vs. Systematic Risk**
+- **Unsystematic Risk**: This is the risk specific to a particular company or industry (e.g., a bad earnings report, a product recall, or regulatory changes). Diversification helps reduce this type of risk.
+- **Systematic Risk**: Also known as market risk, this affects the entire market (e.g., economic recessions, interest rate changes, inflation). Diversification **cannot eliminate** this type of risk.
+
+#### 2. **How Diversification Works**
+By investing in a variety of assets that do **not move in perfect sync**, the negative performance of one investment can be offset by the positive performance of others. This leads to a more **stable and predictable** overall return.
+
+---
+
+### **Ways to Diversify an Investment Portfolio**
+
+#### **A. Across Asset Classes**
+Don’t put all your money in one type of investment. Diversify across:
+- **Stocks (Equities)**
+- **Bonds (Fixed Income)**
+- **Real Estate**
+- **Cash and Cash Equivalents**
+- **Commodities** (e.g., gold, oil)
+- **Alternative Investments** (e.g., hedge funds, private equity)
+
+#### **B. Within Asset Classes**
+Even within a single asset class like stocks, you can diversify:
+- **By Sector**: Technology, healthcare, consumer goods, finance, etc.
+- **By Company Size**: Large-cap, mid-cap, small-cap
+- **By Geography**: Domestic vs. international (developed vs. emerging markets)
+
+#### **C. Through Investment Vehicles**
+- **Mutual Funds / Index Funds**: These already pool money from many investors to buy a diversified basket of securities.
+- **Exchange-Traded Funds (ETFs)**: Similar to mutual funds but trade like stocks; often focus on specific sectors, regions, or strategies.
+- **Portfolio Allocation Software**: Tools that help investors build and manage diversified portfolios based on risk tolerance and goals.
+
+---
+
+",3.0548369884490967,59,500,0.00012354,0.8380086946347911
+eu.amazon.nova-micro-v1:0,Financial services,What is a mutual fund?,"A mutual fund is a type of financial service that pools money from multiple investors to purchase a diversified portfolio of securities, such as stocks, bonds, or other assets. This approach allows individual investors to benefit from the expertise of professional fund managers, who make investment decisions on behalf of the fund's shareholders. 
+
+### Key Characteristics of Mutual Funds
+
+1. **Diversification**: By investing in a variety of securities, mutual funds spread risk across many different assets, which can help reduce the impact of any single investment's poor performance.
+
+2. **Professional Management**: Most mutual funds are managed by professional fund managers who have expertise in selecting and managing investments. These managers typically have a deep understanding of the market and employ various strategies to achieve the fund’s investment objectives.
+
+3. **Liquidity**: Mutual funds generally offer high liquidity, meaning that investors can typically buy or sell shares on any business day.
+
+4. **Minimum Investment**: Many mutual funds have a minimum investment requirement, although this can vary widely. Some funds are designed to accommodate smaller investments, making them accessible to a broader range of investors.
+
+5. **Regulation**: Mutual funds are subject to strict regulatory oversight by government agencies such as the Securities and Exchange Commission (SEC) in the United States. This oversight includes regular reporting and disclosure requirements, which help ensure transparency and protect investors.
+
+### Types of Mutual Funds
+
+1. **Equity Funds**: These funds invest primarily in stocks and aim to generate capital appreciation. They can be further categorized into growth funds, value funds, and large-cap, mid-cap, and small-cap funds, based on the market capitalization of the companies they invest in.
+
+2. **Bond Funds**: These funds invest in fixed-income securities such as government and corporate bonds. Bond funds can be further categorized by the length of the bonds' maturities (short-term, intermediate, long-term) and by credit quality (investment-grade, high-yield).
+
+3. **Money Market Funds**: These funds invest in short-term, high-quality debt instruments issued by governments and corporations. They typically offer higher liquidity and lower risk compared to other types of mutual funds.
+
+4. **Index Funds**: These funds aim to replicate the performance of a specific market index, such as the S&P 500. Index funds are often passively managed, meaning they do not attempt to outperform the market but rather mirror its performance.
+
+5. **Hybrid Funds**: These funds invest in a",1.8289661407470703,12,500,7.042000000000001e-05,0.8397634084288564
+eu.amazon.nova-lite-v1:0,Financial services,What is a mutual fund?,"A mutual fund is a type of investment vehicle in the financial services sector that pools money from multiple investors to purchase a diversified portfolio of securities such as stocks, bonds, or other assets. 
+
+Key Features of Mutual Funds:
+
+1. **Diversification**: By pooling money from many investors, mutual funds offer diversification, which helps to spread risk across various investments, reducing the impact of poor performance by any single asset.
+
+2. **Professional Management**: Mutual funds are managed by professional portfolio managers who make investment decisions on behalf of the fund’s shareholders. This can be advantageous for individual investors who may not have the expertise or resources to manage their own investments.
+
+3. **Liquidity**: Most mutual funds allow investors to buy and sell their shares on any business day at the fund's net asset value (NAV), which is calculated at the end of each trading day.
+
+4. **Variety of Types**: There are many types of mutual funds, each with different investment strategies and objectives. Common types include:
+   - **Equity Funds**: Invest primarily in stocks.
+   - **Bond Funds**: Invest primarily in fixed-income securities like government and corporate bonds.
+   - **Index Funds**: Aim to replicate the performance of a specific market index.
+   - **Balanced Funds**: Invest in a mix of stocks and bonds to achieve a balance between growth and income.
+   - **Money Market Funds**: Invest in short-term, low-risk debt instruments.
+
+5. **Fees and Expenses**: Mutual funds charge fees and expenses, which can include management fees, distribution fees (also known as 12b-1 fees), and other operational costs. These fees can impact the overall return to investors.
+
+6. **Minimum Investment**: Many mutual funds have minimum investment requirements, though some funds have no minimum or very low minimums, making them accessible to a wide range of investors.
+
+7. **Regulation**: In many countries, mutual funds are regulated by financial authorities to protect investors and ensure transparency and compliance with investment policies.
+
+Mutual funds are often seen as a convenient way for individual investors to gain exposure to a professionally managed, diversified portfolio of assets without needing to select individual securities themselves.",1.8788599967956543,12,439,0.00010608,0.8920718160487249
+eu.amazon.nova-pro-v1:0,Financial services,What is a mutual fund?,"A mutual fund is a type of investment vehicle that pools money from many individual investors to purchase a diversified portfolio of stocks, bonds, or other securities. This pooling of resources allows investors to benefit from a more diversified portfolio than they might be able to afford on their own. Here’s a detailed breakdown of what a mutual fund is and how it works:
+
+### Key Characteristics of Mutual Funds
+
+1. **Pooled Investment**:
+   - Investors contribute money to a collective fund.
+   - The fund is managed by professional money managers.
+
+2. **Diversification**:
+   - The fund invests in a variety of assets, reducing the risk associated with investing in a single security.
+
+3. **Professional Management**:
+   - Fund managers make investment decisions on behalf of the investors.
+   - This can be particularly advantageous for investors who may not have the time, expertise, or desire to manage their own investments.
+
+4. **Liquidity**:
+   - Investors can typically buy or sell shares of the mutual fund on any business day.
+   - The price of a mutual fund share is determined by its net asset value (NAV), which is calculated at the end of each trading day.
+
+### Types of Mutual Funds
+
+1. **Equity Funds**:
+   - Invest primarily in stocks.
+   - Aim for capital appreciation.
+
+2. **Bond Funds**:
+   - Invest primarily in fixed-income securities like bonds.
+   - Aim for income generation and capital preservation.
+
+3. **Money Market Funds**:
+   - Invest in short-term, low-risk securities.
+   - Aim for capital preservation and high liquidity.
+
+4. **Balanced Funds**:
+   - Invest in a mix of stocks and bonds.
+   - Aim for a balance between growth and income.
+
+5. **Index Funds**:
+   - Aim to replicate the performance of a specific market index (e.g., S&P 500).
+   - Typically have lower fees compared to actively managed funds.
+
+6. **Sector Funds**:
+   - Invest in securities within a specific industry or sector (e.g., technology, healthcare).
+
+7. **International Funds**:
+   - Invest in securities of companies located outside the investor’s home country.
+
+### How to Invest in Mutual Funds
+
+1. **Directly through the Fund Company**:
+   - Investors can buy shares directly from the mutual fund company.
+
+2. **Through a Broker**:
+   - Investors can buy shares through a brokerage account.
+
+",2.5975990295410156,12,500,0.0016096,0.9035085736687742
+eu.amazon.nova-2-lite-v1:0,Financial services,What is a mutual fund?,"### **What is a Mutual Fund?**
+
+A **mutual fund** is an investment vehicle that pools money from multiple investors to purchase a diversified portfolio of securities such as stocks, bonds, money market instruments, or a combination of these. It is managed by professional fund managers who aim to meet the fund’s stated investment objectives.
+
+---
+
+### **Key Features of a Mutual Fund**
+
+1. **Pooling of Funds:**
+   - Many investors contribute money to the fund.
+   - This pooled capital allows even small investors to access a diversified portfolio that would be difficult to assemble individually.
+
+2. **Professional Management:**
+   - Experienced portfolio managers select and manage the investments.
+   - They research, buy, and sell securities on behalf of the fund’s shareholders.
+
+3. **Diversification:**
+   - The fund invests in a variety of assets, which helps reduce risk.
+   - Even if one investment performs poorly, losses can be offset by better-performing investments.
+
+4. **Ownership of Shares:**
+   - Investors own **shares** or **units** of the mutual fund in proportion to the amount of money they invest.
+   - Each share represents a proportional ownership interest in the fund’s total assets.
+
+5. **Net Asset Value (NAV):**
+   - The value of a mutual fund is calculated daily as the **Net Asset Value (NAV)**.
+   - **NAV = (Total Value of Fund’s Assets – Liabilities) / Number of Outstanding Shares**
+   - Investors buy and sell mutual fund shares at the NAV at the end of each trading day.
+
+6. **Types of Mutual Funds:**
+   Mutual funds are categorized based on their investment objectives and strategies:
+
+   - **Equity Funds:** Invest primarily in stocks. Aim for capital appreciation and growth.
+   - **Bond Funds (Fixed Income Funds):** Invest in bonds and other debt instruments. Aim for income and capital preservation.
+   - **Money Market Funds:** Invest in short-term, high-quality debt securities. Very low risk, used for cash management.
+   - **Balanced Funds:** Combine stocks and bonds to balance growth and income.
+   - **Index Funds:** Track a specific market index (e.g., S&P 500) and aim to replicate its performance.
+   - **Sector Funds:** Focus on a specific industry or sector (e.g., technology, healthcare).
+   - **Target-Date Funds:** Designed for retirement, with asset allocation that becomes more conservative as the target retirement date approaches.
+
+7. **Open-Ended vs. Closed-End",3.490712881088257,58,500,0.00012348,0.8473104157394987
+eu.amazon.nova-micro-v1:0,Financial services,How is net worth calculated?,"Net worth is a fundamental concept in financial services that represents the value of an individual's or entity's assets minus any outstanding liabilities. It provides a snapshot of one’s financial health and is often used as an indicator of financial stability. Here’s a detailed breakdown of how net worth is calculated:
+
+### Components of Net Worth
+
+1. **Assets:**
+   - **Liquid Assets:** These are assets that can easily be converted to cash within a short period. Examples include:
+     - Cash and cash equivalents (savings accounts, checking accounts, money market funds)
+     - Short-term investments (treasury bills, certificates of deposit)
+   - **Real Assets:** These are tangible assets that have value beyond their monetary worth. Examples include:
+     - Real estate (primary home, rental properties)
+     - Vehicles
+     - Jewelry
+   - **Investment Assets:** These are investments that might not be easily liquidated but still hold significant value. Examples include:
+     - Stocks and bonds
+     - Mutual funds
+     - Retirement accounts (401(k), IRA)
+   - **Business Interests:** For business owners, the equity in the business is considered.
+
+2. **Liabilities:**
+   - **Short-term Liabilities:** These are debts that need to be paid within a year. Examples include:
+     - Credit card debt
+     - Overdrafts
+   - **Long-term Liabilities:** These are debts that need to be repaid over a longer period. Examples include:
+     - Mortgages
+     - Car loans
+     - Student loans
+     - Business loans
+
+### Calculation
+
+To calculate net worth, you sum up all the values of your assets and subtract the total value of your liabilities from this sum.
+
+#### Formula:
+\[ \text{Net Worth} = \text{Total Assets} - \text{Total Liabilities} \]
+
+#### Example Calculation:
+
+**Assets:**
+- Cash: $5,000
+- Checking Account: $2,500
+- Savings Account: $10,000
+- Real Estate: $500,000
+- Car: $20,000
+- Investment Accounts: $150,000
+- Retirement Accounts: $200,000
+
+**Total Assets** = $500,000 + $20,000 + $15",1.764601230621338,12,500,7.042000000000001e-05,0.7878283965627934
+eu.amazon.nova-lite-v1:0,Financial services,How is net worth calculated?,"Net worth is a key financial metric that represents an individual's or entity's overall financial health. It is calculated by subtracting liabilities from assets. Here’s a detailed breakdown of how net worth is determined within the context of financial services:
+
+### Components of Net Worth
+
+1. **Assets**
+   Assets are resources owned by an individual or entity that have monetary value and can be converted into cash. They are classified into different categories:
+
+   - **Current Assets**: These include cash and cash equivalents, short-term investments, accounts receivable, inventory, and any other assets expected to be converted into cash within one year. 
+   
+   - **Fixed Assets**: These are long-term tangible assets such as property, plant, equipment (PP&E), and vehicles. These assets are not easily converted into cash but have a useful life of more than one year.
+   
+   - **Investments**: This category includes stocks, bonds, mutual funds, retirement accounts (like 401(k)s and IRAs), real estate investments, and other investment vehicles.
+   
+   - **Intangible Assets**: These are non-physical assets like patents, trademarks, brand recognition, and goodwill. While they lack physical substance, they can have significant monetary value.
+   
+   - **Other Assets**: This might include collectibles, jewelry, art, and other personal items that have monetary value.
+
+2. **Liabilities**
+   Liabilities are financial obligations that an individual or entity owes to others. They are also categorized for clarity:
+
+   - **Current Liabilities**: These are short-term financial obligations due within one year, such as accounts payable, short-term loans, credit card balances, and accrued expenses.
+   
+   - **Long-Term Liabilities**: These are financial obligations due in more than one year, including long-term loans (like mortgages and auto loans), bonds payable, pension fund liabilities, and deferred tax liabilities.
+
+### Calculation of Net Worth
+
+The net worth is derived from the following formula:
+
+\[ \text{Net Worth} = \text{Total Assets} - \text{Total Liabilities} \]
+
+### Example Calculation
+
+Let’s consider an example to illustrate the calculation of net worth:
+
+- **Assets**
+  - Cash and Savings: $20,000
+  - Investments: $150,000
+  - Property: $300,000
+  - Car: $15,000",2.053611993789673,12,500,0.00012072000000000001,0.7844331254829451
+eu.amazon.nova-pro-v1:0,Financial services,How is net worth calculated?,"Certainly! Net worth is a key metric in personal and corporate financial health. It represents the difference between the total value of assets and the total value of liabilities. Here’s a detailed breakdown of how net worth is calculated:
+
+### For Individuals
+
+1. **Identify Assets:**
+   - **Liquid Assets:** These are assets that can be quickly converted into cash. Examples include:
+     - Cash and cash equivalents (savings accounts, checking accounts)
+     - Marketable securities (stocks, bonds)
+   - **Illiquid Assets:** These are assets that are not easily converted into cash. Examples include:
+     - Real estate (home, rental properties)
+     - Retirement accounts (401(k), IRA)
+     - Personal property (vehicles, jewelry, art)
+     - Business ownership
+
+2. **Calculate Total Assets:**
+   Sum up the value of all liquid and illiquid assets.
+
+3. **Identify Liabilities:**
+   - **Current Liabilities:** These are debts that need to be paid within a year. Examples include:
+     - Credit card debt
+     - Personal loans
+     - Current portion of mortgage or rent
+   - **Long-term Liabilities:** These are debts that extend beyond one year. Examples include:
+     - Mortgage
+     - Student loans
+     - Car loans
+
+4. **Calculate Total Liabilities:**
+   Sum up the value of all current and long-term liabilities.
+
+5. **Calculate Net Worth:**
+   \[
+   \text{Net Worth} = \text{Total Assets} - \text{Total Liabilities}
+   \]
+
+### For Businesses
+
+1. **Identify Assets:**
+   - **Current Assets:** These are assets that can be converted into cash within a year. Examples include:
+     - Cash and cash equivalents
+     - Accounts receivable
+     - Inventory
+   - **Non-current Assets:** These are long-term investments. Examples include:
+     - Property, Plant, and Equipment (PP&E)
+     - Intangible assets (patents, trademarks)
+     - Long-term investments
+
+2. **Calculate Total Assets:**
+   Sum up the value of all current and non-current assets.
+
+3. **Identify Liabilities:**
+   - **Current Liabilities:** Debts due within one year. Examples include:
+     - Accounts payable
+     - Short-term loans
+     - Accrued liabilities
+   - **Long-term Liabilities:** Debts due beyond one year.",7.2760961055755615,12,500,0.0016096,0.68977623692815
+eu.amazon.nova-2-lite-v1:0,Financial services,How is net worth calculated?,"### **How Net Worth is Calculated**
+
+**Net worth** is a fundamental financial metric that measures the total value of an individual's or entity's assets minus their liabilities. It provides a snapshot of financial health and is widely used by individuals, businesses, and financial advisors to assess wealth and financial stability.
+
+---
+
+### **Formula for Net Worth**
+
+$$
+\textbf{Net Worth} = \text{Total Assets} - \text{Total Liabilities}
+$$
+
+---
+
+### **1. Understanding Assets**
+
+**Assets** are resources owned that have economic value and can be converted into cash. They are typically categorized into two main types:
+
+#### **a. Current (Liquid) Assets**
+These are assets that can be quickly converted into cash with minimal loss of value.
+
+- **Cash and Cash Equivalents**: Physical cash, checking and savings accounts, money market accounts.
+- **Short-term Investments**: Treasury bills, bonds, mutual funds, stocks that can be sold quickly.
+- **Accounts Receivable**: Money owed to you (for individuals, this is usually minimal).
+
+#### **b. Non-Current (Illiquid) Assets**
+These are longer-term investments and items that are not easily converted to cash.
+
+- **Real Estate**: Value of your home, rental properties, land.
+- **Long-term Investments**: Retirement accounts (401(k), IRA), stocks, bonds, mutual funds held for the long term.
+- **Personal Property**: Vehicles, jewelry, art, collectibles (valued at fair market value).
+- **Business Ownership**: Value of a privately owned business or partnership interests.
+
+> **Tip**: For personal net worth, assets are usually valued at **fair market value** — what you could reasonably sell them for today.
+
+---
+
+### **2. Understanding Liabilities**
+
+**Liabilities** are obligations or debts that must be paid. They also fall into two categories:
+
+#### **a. Current Liabilities**
+Short-term financial obligations due within one year.
+
+- **Credit Card Balances**
+- **Unpaid Utility Bills**
+- **Taxes Owed**
+- **Short-term Loans**
+- **Accounts Payable** (for businesses)
+
+#### **b. Long-term Liabilities**
+Debts that are due beyond one year.
+
+- **Mortgage Balances**
+- **Student Loans**
+- **Car Loans**
+- **Personal Loans**
+- **Bank Loans** (e.g., business loans)
+
+> **Tip**: Only include **outstanding balances** — not the original loan amount or the total you will eventually pay.
+
+---
+
+### **",3.2163100242614746,58,500,0.00012348,0.689910457630829
+eu.amazon.nova-micro-v1:0,Financial services,What is a certificate of deposit (CD)?,"A Certificate of Deposit (CD) is a savings product offered by banks and credit unions that provides a fixed interest rate for a specified length of time. Here's a detailed overview:
+
+### Key Features of a Certificate of Deposit (CD):
+
+1. **Fixed Interest Rate**: 
+   - CDs offer a fixed interest rate that is determined when you open the CD. This rate remains constant for the duration of the term, regardless of market fluctuations.
+   
+2. **Fixed Term**:
+   - CDs have a set term, which can range from a few months to several years. Common terms include 6 months, 1 year, 2 years, and 5 years, although shorter and longer terms are also available.
+   
+3. **Principal Safety**:
+   - CDs are generally backed by the FDIC (Federal Deposit Insurance Corporation) in the United States, which insures deposits up to $250,000 per depositor, per insured bank. This means that the principal amount is protected against bank failure.
+   
+4. **Higher Interest Rates**:
+   - Because CDs tie up your money for a longer period, they typically offer higher interest rates compared to regular savings accounts. This is attractive to those looking to earn more on their savings.
+
+5. **Penalty for Early Withdrawal**:
+   - To incentivize long-term commitment, CDs often come with a penalty for early withdrawal. If you withdraw the funds before the term is up, you typically lose some or all of the interest earned and may pay a fine, calculated based on a certain number of months' worth of interest.
+
+6. **Fixed Payments**:
+   - Interest is usually paid at the end of the term, although some CDs offer periodic interest payments (e.g., annually, semi-annually).
+
+### Types of CDs:
+
+1. **Standard CDs**:
+   - The most common type, with fixed terms ranging from a few months to several years.
+
+2. **Jumbo CDs**:
+   - These require a larger minimum deposit (often $100,000 or more) and usually offer higher interest rates than standard CDs.
+
+3. **Variable Rate CDs**:
+   - Unlike standard CDs, these offer interest rates that can change based on market conditions. However, they are less common and generally less predictable.
+
+4. **No-Penalty CDs (Liquidity CDs)**:
+   - These CDs allow you to withdraw your money early without penalties,",1.9628548622131348,15,500,7.0525e-05,0.8739317613790508
+eu.amazon.nova-lite-v1:0,Financial services,What is a certificate of deposit (CD)?,"A certificate of deposit (CD) is a financial product offered by banks and credit unions that provides an interest rate premium in exchange for the customer agreeing to leave a lump-sum deposit untouched for a pre-determined period of time, known as the term. CDs are a popular savings vehicle because they typically offer higher interest rates than standard savings accounts, particularly when the money is locked in for longer terms. 
+
+Here are some key features of a CD:
+
+1. **Fixed Term:** CDs have a fixed term, which can range from a few months to several years. The term determines how long the deposit remains locked up.
+
+2. **Fixed Interest Rate:** When you open a CD, you lock in an interest rate for the entire term of the CD. This rate is fixed, meaning it will not change over the life of the CD, providing stability and predictability.
+
+3. **Principal Protection:** The principal amount you deposit in a CD is typically protected by the Federal Deposit Insurance Corporation (FDIC) in the United States, up to $250,000 per depositor, per institution.
+
+4. **Early Withdrawal Penalty:** One of the main trade-offs for the higher interest rate is the penalty for early withdrawal. If you need to withdraw funds before the maturity date, the bank will usually deduct a portion of the interest earned, and in some cases, a portion of the principal as well. The penalty amount can vary widely, so it’s important to understand the terms before signing up.
+
+5. **Variety of Options:** Banks offer a variety of CD terms, including standard CDs, jumbo CDs (with higher minimum deposits), bump-up CDs (which allow you to increase the rate once during the term), and no-penalty CDs (which allow withdrawals without a penalty, usually with a lower interest rate).
+
+6. **Liquidity:** Unlike savings accounts, CDs do not typically allow for easy access to funds. Once the CD is opened, the funds are locked in until the maturity date unless a penalty is paid for early withdrawal.
+
+7. **Taxation:** Interest earned on CDs is subject to federal income tax and possibly state and local taxes, depending on where you live. Some banks may also withhold taxes at the end of the term unless you opt out.
+
+CDs can be a good option for risk-averse investors or for those looking to save a specific amount of money for a future need, such as a down payment on a house or a",2.365334987640381,15,500,0.0001209,0.8571572953317413
+eu.amazon.nova-pro-v1:0,Financial services,What is a certificate of deposit (CD)?,"A Certificate of Deposit (CD) is a financial product offered by banks and credit unions that provides an interest return on a deposit for a specified period, known as the term. Here’s a detailed explanation of what a CD is and how it works:
+
+### Key Features of a CD
+
+1. **Fixed Interest Rate**:
+   - When you open a CD, you typically receive a fixed interest rate for the entire term of the CD. This rate is usually higher than that of a regular savings account.
+
+2. **Term Length**:
+   - CDs have varying term lengths, commonly ranging from a few months to several years (e.g., 3 months, 6 months, 1 year, 3 years, 5 years, etc.). The longer the term, the higher the interest rate tends to be.
+
+3. **Principal Amount**:
+   - You deposit a specific amount of money (the principal) when you open the CD. This amount remains deposited for the entire term.
+
+4. **Maturity Date**:
+   - The maturity date is the end of the CD’s term. On this date, you can withdraw your principal plus the accrued interest without penalty.
+
+5. **Penalty for Early Withdrawal**:
+   - If you withdraw your money before the CD matures, you’ll likely incur an early withdrawal penalty. This penalty can erode the interest earned and even dip into the principal.
+
+6. **FDIC or NCUA Insurance**:
+   - In the United States, CDs offered by banks are usually FDIC-insured up to $250,000 per depositor, per insured bank, for each account ownership category. Credit union CDs are typically NCUA-insured to the same extent.
+
+### Types of CDs
+
+1. **Traditional (or Regular) CD**:
+   - Fixed rate for the entire term with a penalty for early withdrawal.
+
+2. **Bump-Up CD**:
+   - Allows you to request a rate increase once during the term if market rates rise.
+
+3. **Step-Up CD**:
+   - Automatically increases your interest rate at specific intervals during the term.
+
+4. **Jumbo CD**:
+   - Requires a larger minimum deposit, often $100,000 or more, and usually offers a higher interest rate.
+
+5. **No-Penalty CD**:
+   - Allows you to withdraw your money penalty-free before the maturity date,",2.793661117553711,15,500,0.0016120000000000002,0.875520354768177
+eu.amazon.nova-2-lite-v1:0,Financial services,What is a certificate of deposit (CD)?,"### **Certificate of Deposit (CD) – Definition and Overview**
+
+A **Certificate of Deposit (CD)** is a type of time deposit account offered by banks, credit unions, and other financial institutions. It is a financial product that allows individuals to invest a lump sum of money for a **fixed period of time** in exchange for a guaranteed, usually higher-than-average, interest rate.
+
+---
+
+### **Key Features of a Certificate of Deposit (CD)**
+
+1. **Fixed Term**
+   - CDs have a **specific maturity date**, which can range from **as short as a few months** to **10 years or more**.
+   - The investor agrees to keep the money in the account for the entire term.
+
+2. **Guaranteed Interest Rate**
+   - The interest rate is **locked in** for the life of the CD, regardless of market fluctuations.
+   - This provides **predictable returns** and protects against interest rate risk.
+
+3. **Higher Interest Than Savings Accounts**
+   - Because the money is tied up for a set period, CDs typically offer **higher interest rates** than regular savings accounts or money market accounts.
+
+4. **Minimum Deposit Requirements**
+   - Most CDs require a **minimum initial deposit**, which can vary from a few hundred dollars to several thousand.
+
+5. **FDIC or NCUA Insurance**
+   - In the U.S., CDs from banks are **FDIC-insured** (up to $250,000 per depositor, per institution).
+   - CDs from credit unions are **NCUA-insured** under the same limits.
+
+6. **Early Withdrawal Penalties**
+   - Withdrawing money **before the maturity date** usually results in a **penalty**, which can be a loss of some or all of the earned interest, and in some cases, a portion of the principal.
+
+---
+
+### **Types of CDs**
+
+| **Type of CD**         | **Description** |
+|------------------------|-----------------|
+| **Traditional (Fixed-Term) CD** | Standard CD with a fixed interest rate and term. |
+| **No-Penalty CD**        | Allows early withdrawal without penalty, often with a slightly lower rate. |
+| **Liquid CD**            | Functions like a savings account with CD-like rates; allows withdrawals but may have limits. |
+| **Bump-Up or Step-Up CD** | Allows the rate to be increased once (bump-up) or periodically (step-up) during the term. |
+| **",3.1968331336975098,61,500,0.00012366,0.8949995708454673
