@@ -1,0 +1,68 @@
+{
+  "primary_model": "eu.amazon.nova-lite-v1:0",
+  "fallback_models": [
+    "eu.amazon.nova-micro-v1:0",
+    "eu.amazon.nova-2-lite-v1:0",
+    "eu.amazon.nova-pro-v1:0"
+  ],
+  "use_case_models": {
+    "performance_optimized": "eu.amazon.nova-micro-v1:0",
+    "accuracy_optimized": "eu.amazon.nova-2-lite-v1:0",
+    "balanced": "eu.amazon.nova-lite-v1:0",
+    "cost_optimized": "eu.amazon.nova-2-lite-v1:0"
+  },
+  "model_scores": [
+    {
+      "model_id": "eu.amazon.nova-lite-v1:0",
+      "latency": 2.0695881843566895,
+      "similarity_score": 0.7802769944276057,
+      "cost": 0.00011527636363636364,
+      "latency_score": 0.9051079237600911,
+      "similarity_score_normalized": 0.694477414779773,
+      "cost_score": 0.9708907981342055,
+      "performance_score": 0.8629818219640275,
+      "accuracy_score": 0.7366035165758367,
+      "overall_score": 0.799792669269932,
+      "cost_score_weighted": 0.8879667831278757
+    },
+    {
+      "model_id": "eu.amazon.nova-micro-v1:0",
+      "latency": 1.953969261863015,
+      "similarity_score": 0.7744578566811918,
+      "cost": 7.045181818181819e-05,
+      "latency_score": 1.0,
+      "similarity_score_normalized": 0.38286941488155085,
+      "cost_score": 1.0,
+      "performance_score": 0.8765738829763102,
+      "accuracy_score": 0.5062955319052407,
+      "overall_score": 0.6914347074407754,
+      "cost_score_weighted": 0.8148608244644652
+    },
+    {
+      "model_id": "eu.amazon.nova-2-lite-v1:0",
+      "latency": 3.172394730828025,
+      "similarity_score": 0.7859824898212338,
+      "cost": 0.00012352363636363638,
+      "latency_score": 0.0,
+      "similarity_score_normalized": 1.0,
+      "cost_score": 0.9655349930897599,
+      "performance_score": 0.2,
+      "accuracy_score": 0.8,
+      "overall_score": 0.5,
+      "cost_score_weighted": 0.9758744951628318
+    },
+    {
+      "model_id": "eu.amazon.nova-pro-v1:0",
+      "latency": 3.1566636128859087,
+      "similarity_score": 0.7673079444041889,
+      "cost": 0.0016103272727272728,
+      "latency_score": 0.012911021923629858,
+      "similarity_score_normalized": 0.0,
+      "cost_score": 0.0,
+      "performance_score": 0.010328817538903887,
+      "accuracy_score": 0.002582204384725972,
+      "overall_score": 0.006455510961814929,
+      "cost_score_weighted": 0.0
+    }
+  ]
+}
