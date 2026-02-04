@@ -71,9 +71,7 @@ export const handler = awslambda.streamifyResponse(
 
       const modelId = selectModel(parsedConfigData, useCase);
 
-      responseStream.write(
-        `data: ${JSON.stringify({ model_used: modelId })}\n\n`,
-      );
+      responseStream.write(`${JSON.stringify({ model_used: modelId })}\n\n`);
 
       const command = new InvokeModelWithResponseStreamCommand({
         modelId,
@@ -101,11 +99,11 @@ export const handler = awslambda.streamifyResponse(
         );
         if (chunkData.contentBlockDelta) {
           const text = chunkData.contentBlockDelta.delta.text || '';
-          responseStream.write(`data: ${JSON.stringify({ chunk: text })}\n\n`);
+          responseStream.write(`${JSON.stringify({ chunk: text })}\n\n`);
         }
       }
 
-      responseStream.write('data: [DONE]\n\n');
+      responseStream.write('[DONE]\n\n');
     } catch (error) {
       responseStream.write(`Error: ${JSON.stringify({ error })}`);
     } finally {

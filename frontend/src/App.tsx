@@ -27,19 +27,24 @@ function App() {
 
       while (reader) {
         const { done, value } = await reader.read();
-        if (done) break;
+        if (done) {
+          break;
+        }
 
         const chunk = decoder.decode(value);
         const lines = chunk.split('\n').filter((line) => line.trim());
 
         for (const line of lines) {
-          if (line.startsWith('data: ')) {
-            const data = line.slice(6);
-            if (data === '[DONE]') break;
+          if (line === '[DONE]') {
+            break;
+          }
 
-            const parsed = JSON.parse(data);
-            if (parsed.model_used) setModelUsed(parsed.model_used);
-            if (parsed.chunk) setResponse((prev) => prev + parsed.chunk);
+          const parsed = JSON.parse(line);
+          if (parsed.model_used) {
+            setModelUsed(parsed.model_used);
+          }
+          if (parsed.chunk) {
+            setResponse((prev) => prev + parsed.chunk);
           }
         }
       }
