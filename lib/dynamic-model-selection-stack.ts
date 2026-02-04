@@ -4,6 +4,7 @@ import * as path from 'path';
 import * as cdk from 'aws-cdk-lib/core';
 import * as appconfig from 'aws-cdk-lib/aws-appconfig';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
+import * as lambdaNodejs from 'aws-cdk-lib/aws-lambda-nodejs';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as apigateway from 'aws-cdk-lib/aws-apigateway';
 import * as logs from 'aws-cdk-lib/aws-logs';
@@ -76,34 +77,53 @@ export class DynamicModelSelectionStack extends cdk.Stack {
       deploymentStrategyId: deploymentStrategy.ref,
     });
 
-    const modelAbstractionFn = new lambda.Function(
+    const modelAbstractionFn = new lambdaNodejs.NodejsFunction(
       this,
       'ModelAbstractionFunction',
       {
-        runtime: lambda.Runtime.PYTHON_3_14,
-        handler: 'model_abstraction.lambda_handler',
-        code: lambda.Code.fromAsset(
-          path.join(__dirname, '../src/lambda-functions'),
-        ),
-        timeout: cdk.Duration.seconds(30),
+        entry: './src/lambda-functions/model_abstraction.ts',
+        handler: 'handler',
+        runtime: lambda.Runtime.NODEJS_24_X,
+        timeout: cdk.Duration.minutes(2),
         logRetention: logs.RetentionDays.FIVE_DAYS,
+        memorySize: 256,
+        layers: [
+          lambda.LayerVersion.fromLayerVersionArn(
+            this,
+            'AppConfigLayer',
+            'arn:aws:lambda:eu-central-1:066940009817:layer:AWS-AppConfig-Extension:261',
+          ),
+        ],
+        environment: {
+          NODE_OPTIONS: '--enable-source-maps',
+          APP_CONFIG_APPLICATION_NAME: appConfigApplication.name,
+          APP_CONFIG_ENVIRONMENT: appConfigEnvironment.name,
+          APP_CONFIG_CONFIGURATION: configProfile.name,
+        },
+        bundling: {
+          target: 'es2020',
+          logLevel: lambdaNodejs.LogLevel.INFO,
+          minify: true,
+          sourceMap: true,
+        },
       },
     );
 
     modelAbstractionFn.addToRolePolicy(
       new iam.PolicyStatement({
-        actions: ['appconfig:GetConfiguration'],
+        actions: [
+          'appconfig:GetLatestConfiguration',
+          'appconfig:StartConfigurationSession',
+        ],
         resources: [
-          `arn:aws:appconfig:${region}:${account}:application/${appConfigApplication.attrApplicationId}`,
-          `arn:aws:appconfig:${region}:${account}:application/${appConfigApplication.attrApplicationId}/environment/${appConfigEnvironment.attrEnvironmentId}`,
-          `arn:aws:appconfig:${region}:${account}:application/${appConfigApplication.attrApplicationId}/configurationprofile/${configProfile.attrConfigurationProfileId}`,
+          `arn:aws:appconfig:${region}:${account}:application/${appConfigApplication.attrApplicationId}/environment/${appConfigEnvironment.attrEnvironmentId}/configuration/${configProfile.attrConfigurationProfileId}`,
         ],
       }),
     );
 
     modelAbstractionFn.addToRolePolicy(
       new iam.PolicyStatement({
-        actions: ['bedrock:InvokeModel'],
+        actions: ['bedrock:InvokeModelWithResponseStream'],
         resources: [
           'arn:aws:bedrock:*::foundation-model/*',
           `arn:aws:bedrock:*:${account}:inference-profile/*`,
@@ -118,16 +138,37 @@ export class DynamicModelSelectionStack extends cdk.Stack {
     );
 
     const api = new apigateway.RestApi(this, 'AIAssistantAPI', {
+      endpointTypes: [apigateway.EndpointType.REGIONAL],
       restApiName: 'AIAssistantAPI',
       deployOptions: {
         stageName: 'prod',
+      },
+      defaultCorsPreflightOptions: {
+        allowOrigins: apigateway.Cors.ALL_ORIGINS,
+        allowMethods: apigateway.Cors.ALL_METHODS,
+        allowHeaders: ['Content-Type', 'Authorization'],
+        statusCode: 200,
       },
     });
 
     const generateResource = api.root.addResource('generate');
     generateResource.addMethod(
       'POST',
-      new apigateway.LambdaIntegration(modelAbstractionFn),
+      new apigateway.LambdaIntegration(modelAbstractionFn, {
+        proxy: true,
+        responseTransferMode: apigateway.ResponseTransferMode.STREAM,
+        timeout: cdk.Duration.minutes(2),
+      }),
+      {
+        methodResponses: [
+          {
+            statusCode: '200',
+            responseParameters: {
+              'method.response.header.Access-Control-Allow-Origin': true,
+            },
+          },
+        ],
+      },
     );
   }
 }
