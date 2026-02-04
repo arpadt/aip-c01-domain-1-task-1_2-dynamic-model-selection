@@ -91,6 +91,7 @@ export class DynamicModelSelectionStack extends cdk.Stack {
           lambda.LayerVersion.fromLayerVersionArn(
             this,
             'AppConfigLayer',
+            // modify the URL to match your region
             'arn:aws:lambda:eu-central-1:066940009817:layer:AWS-AppConfig-Extension:261',
           ),
         ],
