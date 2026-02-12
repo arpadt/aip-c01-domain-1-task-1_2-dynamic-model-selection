@@ -8,6 +8,8 @@ import * as lambdaNodejs from 'aws-cdk-lib/aws-lambda-nodejs';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as apigateway from 'aws-cdk-lib/aws-apigateway';
 import * as logs from 'aws-cdk-lib/aws-logs';
+import * as cognito from 'aws-cdk-lib/aws-cognito';
+import * as cognitoIdentity from 'aws-cdk-lib/aws-cognito-identitypool';
 import { Construct } from 'constructs';
 
 export class DynamicModelSelectionStack extends cdk.Stack {
@@ -171,5 +173,151 @@ export class DynamicModelSelectionStack extends cdk.Stack {
         ],
       },
     );
+
+    /**
+     * FUNCTION URL ENDPOINT VERSION - ADDITIONAL RESOURCES
+     */
+
+    const modelAbstractionFnForUrl = new lambdaNodejs.NodejsFunction(
+      this,
+      'ModelAbstractionFunctionForUrl',
+      {
+        entry: './src/lambda-functions/model-abstraction-for-url.ts',
+        handler: 'handler',
+        runtime: lambda.Runtime.NODEJS_24_X,
+        timeout: cdk.Duration.minutes(2),
+        logRetention: logs.RetentionDays.FIVE_DAYS,
+        memorySize: 256,
+        layers: [
+          lambda.LayerVersion.fromLayerVersionArn(
+            this,
+            'AppConfigLayerFnUrl',
+            // modify the URL to match your region
+            'arn:aws:lambda:eu-central-1:066940009817:layer:AWS-AppConfig-Extension:261',
+          ),
+        ],
+        environment: {
+          NODE_OPTIONS: '--enable-source-maps',
+          APP_CONFIG_APPLICATION_NAME: appConfigApplication.name,
+          APP_CONFIG_ENVIRONMENT: appConfigEnvironment.name,
+          APP_CONFIG_CONFIGURATION: configProfile.name,
+        },
+        bundling: {
+          target: 'es2020',
+          logLevel: lambdaNodejs.LogLevel.INFO,
+          minify: true,
+          sourceMap: true,
+        },
+      },
+    );
+
+    modelAbstractionFnForUrl.addToRolePolicy(
+      new iam.PolicyStatement({
+        actions: [
+          'appconfig:GetLatestConfiguration',
+          'appconfig:StartConfigurationSession',
+        ],
+        resources: [
+          `arn:aws:appconfig:${region}:${account}:application/${appConfigApplication.attrApplicationId}/environment/${appConfigEnvironment.attrEnvironmentId}/configuration/${configProfile.attrConfigurationProfileId}`,
+        ],
+      }),
+    );
+    modelAbstractionFnForUrl.addToRolePolicy(
+      new iam.PolicyStatement({
+        actions: ['bedrock:InvokeModelWithResponseStream'],
+        resources: [
+          'arn:aws:bedrock:*::foundation-model/*',
+          `arn:aws:bedrock:*:${account}:inference-profile/*`,
+        ],
+      }),
+    );
+    modelAbstractionFnForUrl.addToRolePolicy(
+      new iam.PolicyStatement({
+        actions: ['bedrock:GetInferenceProfile'],
+        resources: [`arn:aws:bedrock:*:${account}:inference-profile/*`],
+      }),
+    );
+
+    const userPool = new cognito.UserPool(this, 'ModelSelectionUserPool', {
+      userPoolName: 'model-selection-user-pool',
+      accountRecovery: cognito.AccountRecovery.NONE,
+    });
+
+    const userPoolClient = userPool.addClient('FnUrlClient');
+
+    const fnUrlIdentityPool = new cognitoIdentity.IdentityPool(
+      this,
+      'FnUrlIdentityPool',
+      {
+        identityPoolName: 'FnUrlIdentityPool',
+        authenticationProviders: {
+          userPools: [
+            new cognitoIdentity.UserPoolAuthenticationProvider({
+              userPool,
+              userPoolClient,
+            }),
+          ],
+        },
+        roleMappings: [
+          {
+            mappingKey: 'userpool',
+            providerUrl: cognitoIdentity.IdentityPoolProviderUrl.userPool(
+              userPool,
+              userPoolClient,
+            ),
+            useToken: true,
+          },
+        ],
+      },
+    );
+
+    const fnUrlRole = new iam.Role(this, 'ModelAbstractionFnUrlRole', {
+      assumedBy: new iam.FederatedPrincipal(
+        'cognito-identity.amazonaws.com',
+        {
+          StringEquals: {
+            'cognito-identity.amazonaws.com:aud':
+              fnUrlIdentityPool.identityPoolId,
+          },
+          'ForAnyValue:StringLike': {
+            'cognito-identity.amazonaws.com:amr': 'authenticated',
+          },
+        },
+        'sts:AssumeRoleWithWebIdentity',
+      ),
+    });
+
+    new cognito.CfnUserPoolGroup(this, 'FnUrlGroup', {
+      userPoolId: userPool.userPoolId,
+      description: 'Access to function URL',
+      groupName: 'fn-url-access',
+      roleArn: fnUrlRole.roleArn,
+    });
+
+    const modelAbstractionFnUrl = modelAbstractionFnForUrl.addFunctionUrl({
+      authType: lambda.FunctionUrlAuthType.AWS_IAM,
+      cors: {
+        allowedOrigins: ['*'],
+        allowedMethods: [lambda.HttpMethod.ALL],
+        allowedHeaders: ['*'],
+        maxAge: cdk.Duration.seconds(300),
+      },
+      invokeMode: lambda.InvokeMode.RESPONSE_STREAM,
+    });
+
+    modelAbstractionFnUrl.grantInvokeUrl(fnUrlRole);
+
+    new cdk.CfnOutput(this, 'IdentityPoolId', {
+      value: fnUrlIdentityPool.identityPoolId,
+    });
+    new cdk.CfnOutput(this, 'AppClientId', {
+      value: userPoolClient.userPoolClientId,
+    });
+    new cdk.CfnOutput(this, 'UserPoolId', {
+      value: userPool.userPoolId,
+    });
+    new cdk.CfnOutput(this, 'LambdaFunctionUrl', {
+      value: modelAbstractionFnUrl.url,
+    });
   }
 }
