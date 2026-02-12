@@ -243,13 +243,7 @@ export class DynamicModelSelectionStack extends cdk.Stack {
       accountRecovery: cognito.AccountRecovery.NONE,
     });
 
-    const fnUrlRole = new iam.Role(this, 'ModelAbstractionFnUrlRole', {
-      assumedBy: new iam.FederatedPrincipal(
-        'cognito-identity.amazonaws.com',
-        {},
-        'sts:AssumeRoleWithWebIdentity',
-      ),
-    });
+    const userPoolClient = userPool.addClient('FnUrlClient');
 
     const fnUrlIdentityPool = new cognitoIdentity.IdentityPool(
       this,
@@ -260,36 +254,38 @@ export class DynamicModelSelectionStack extends cdk.Stack {
           userPools: [
             new cognitoIdentity.UserPoolAuthenticationProvider({
               userPool,
+              userPoolClient,
             }),
           ],
         },
-        authenticatedRole: fnUrlRole,
+        roleMappings: [
+          {
+            mappingKey: 'userpool',
+            providerUrl: cognitoIdentity.IdentityPoolProviderUrl.userPool(
+              userPool,
+              userPoolClient,
+            ),
+            useToken: true,
+          },
+        ],
       },
     );
 
-    // Update the role's trust policy with the identity pool ID conditions
-    const cfnRole = fnUrlRole.node.defaultChild as iam.CfnRole;
-    cfnRole.assumeRolePolicyDocument = {
-      Version: '2012-10-17',
-      Statement: [
+    const fnUrlRole = new iam.Role(this, 'ModelAbstractionFnUrlRole', {
+      assumedBy: new iam.FederatedPrincipal(
+        'cognito-identity.amazonaws.com',
         {
-          Effect: 'Allow',
-          Principal: {
-            Federated: 'cognito-identity.amazonaws.com',
+          StringEquals: {
+            'cognito-identity.amazonaws.com:aud':
+              fnUrlIdentityPool.identityPoolId,
           },
-          Action: 'sts:AssumeRoleWithWebIdentity',
-          Condition: {
-            StringEquals: {
-              'cognito-identity.amazonaws.com:aud':
-                fnUrlIdentityPool.identityPoolId,
-            },
-            'ForAnyValue:StringLike': {
-              'cognito-identity.amazonaws.com:amr': 'authenticated',
-            },
+          'ForAnyValue:StringLike': {
+            'cognito-identity.amazonaws.com:amr': 'authenticated',
           },
         },
-      ],
-    };
+        'sts:AssumeRoleWithWebIdentity',
+      ),
+    });
 
     new cognito.CfnUserPoolGroup(this, 'FnUrlGroup', {
       userPoolId: userPool.userPoolId,
