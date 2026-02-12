@@ -310,6 +310,9 @@ export class DynamicModelSelectionStack extends cdk.Stack {
     new cdk.CfnOutput(this, 'IdentityPoolId', {
       value: fnUrlIdentityPool.identityPoolId,
     });
+    new cdk.CfnOutput(this, 'AppClientId', {
+      value: userPoolClient.userPoolClientId,
+    });
     new cdk.CfnOutput(this, 'UserPoolId', {
       value: userPool.userPoolId,
     });
